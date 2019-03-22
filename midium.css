@@ -1,0 +1,218 @@
+/*============ レスポンシブのリセットcss ============*/
+body{
+    max-width: 100%;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+*,
+*::before,
+*::after{
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+
+/*== ここからレスポンシブの記述 ==*/
+/* サイドバーのレイアウト変更 */
+.bar-position{
+    z-index: 3;
+    box-shadow: 0 .2rem rgba(0,0,0,0.2);
+    width: 100%;
+    height: auto;
+}
+.top-container{
+    width: 100%;
+}
+.bar-position h2{
+    font-size: 2rem;
+    padding: 1.6rem 2rem;
+    margin: 0;
+}
+
+
+/* メニューボタンの記述 */
+#menu-btn{
+    position: fixed;
+    top: 1.6rem;
+    right: 2.2rem;
+    width: 3rem;
+    height: 1.6rem;
+    cursor: pointer;
+    z-index: 4;
+}
+#menu-btn span{
+    position: absolute;
+    display: block;
+    top: 50%;
+    width: 100%;
+    height: .15rem;
+    background: #fff;
+    border-radius: .2rem;
+    transition: all .6s;
+}
+#menu-btn span::before,
+#menu-btn span::after{
+    content: "";
+    display: block;
+    width: 100%;
+    background: #fff;
+    border-radius: .2rem;
+    transition: all .6s;
+    position: absolute;
+}
+#menu-btn span::before{
+    height: .15rem;
+    bottom: .8rem;
+}
+#menu-btn span::after{
+    height: .2rem;
+    top: .8rem;
+}
+#menu-btn.active span:before {
+    transform: translateY(.8rem) rotate(-45deg);/*反時計回りに45度*/
+}
+#menu-btn.active span:after {
+    transform: translateY(-.8rem) rotate(45deg);/*時計回りに45度*/
+}
+#menu-btn.active span{
+    background-color: transparent;
+}
+
+
+/* ハンバーガーメニューの記述 */
+#hbg-menu{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+    z-index: 6;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .6s;
+}
+#hbg-menu.active{
+    opacity: 1;
+    visibility: visible;
+}
+#menu-bg{
+    width: 100%;
+    height: 100vh;
+}
+.menu-area{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.contents-list,
+.sns-list{
+    text-align: center;
+}
+.contents-list ul li{
+    font-size: 1.8rem;
+    margin: 0;
+    margin-bottom: 4rem;
+}
+.sns-list ul{
+    padding: 0 2rem;
+}
+.sns-list ul li{
+    margin: 0 1.2rem 0 0;
+}
+.sns-list ul li:last-child{
+    margin-right: 0;
+}
+.sns-list ul li:first-child{
+    margin-left: 0;
+}
+
+/* Introductionの記述 */
+.intro-area{
+    padding: 4rem 0;
+}
+.title{
+    font-size: 2.6rem;
+    margin-bottom: 5rem;
+}
+.title:after{
+    width: 80%;
+}
+.intro-txt{
+    width: 70%;
+}
+.ft-title{
+    margin-bottom: 3rem;
+}
+
+/* Contentsの記述 */
+.contents-area{
+    margin-bottom: 6rem;
+}
+.contents-group{
+    display: block;
+}
+.contents-index{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 5rem;
+}
+.contents-index h3{
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+.contents-index img{
+    width: 10rem;
+    height: auto;
+    margin-bottom: 2rem;
+}
+.contents-index p{
+    width: 24rem;
+    margin: 0 auto;
+}
+
+
+/* 2個目の矢印を非表示に */
+.down-button-bk{
+    display: none;
+}
+.sd-container{
+    height: auto;
+}
+
+
+/* aboutの記述 */
+#about{
+    width: 90%;
+}
+.profile,
+.comment{
+    width: 100%;
+}
+.pf-img{
+    width: 21rem;
+    height: 21rem;
+}
+
+/* works, contactの横幅変更 */
+#works,
+#contact{
+    width: 90%;
+}
+
+/* works-itemの変更 */
+.works-item{
+    margin-bottom: 2rem;
+}
+
+/* submit buttonの調整 */
+.submit-btn button{
+    background-color: #fff;
+}
+
+/* アニメーションのオフ */
+.sideIn{
+    animation: none;
+}
