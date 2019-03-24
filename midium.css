@@ -206,6 +206,9 @@ img{
 .works-item{
     margin-bottom: 2rem;
 }
+.modal-content{
+    width: 80%;
+}
 
 /* submit buttonの調整 */
 .submit-btn button{

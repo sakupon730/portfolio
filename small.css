@@ -135,11 +135,11 @@ img{
     height: 100vh;
     padding-top: 16rem;
     padding-bottom: 0;
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
 }
 .title{
     font-size: 2.4rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 .title:after{
     width: 80%;
@@ -161,7 +161,7 @@ img{
 .contents-index{
     width: 100%;
     margin-right: 0;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 .contents-index h3{
     font-size: 2.2rem;
@@ -215,10 +215,12 @@ img{
 .profile,
 .comment{
     width: 100%;
+    margin-bottom: 2rem;
 }
 .pf-img{
-    width: 21rem;
-    height: 21rem;
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: 2rem;
 }
 .ab-subttl{
     font-size: 2.2rem;
@@ -247,6 +249,9 @@ img{
 .works-item{
     width: 100%;
     margin-bottom: 1rem;
+}
+.modal-content{
+    width: 90%;
 }
 
 /* submit buttonの調整 */

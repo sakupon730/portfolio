@@ -378,10 +378,10 @@
 .comment,
 .works-item,
 .contact{
-    opacity: 0;
+    opacity: 1;/* 0を1に変えた */
 }
 .scrollFadeInUp{
-    opacity: 0;
+    opacity: 1;/* 0を1に変えた */
     animation-name: scrollFadeInUp;
     animation-duration: .6s;
     animation-fill-mode: forwards;
@@ -676,6 +676,9 @@
     font-size: 1.4rem;
     line-height: 1.4;
     margin-bottom: 2.4rem;
+}
+.close button{
+    background-color: #fff;
 }
 
 
