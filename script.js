@@ -30,6 +30,23 @@ $(function(){
 });
 
 
+//moreのクリック処理
+$(function(){
+
+    //開くときの処理
+    $('.click-more, .modal-bg').on('click', function(e){
+        e.preventDefault();
+        $('.modal-area').toggleClass('active');
+    });
+
+    //閉じるときの処理
+    $('.modal-bg, .close').on('click', function(e){
+        e.preventDefault();
+        $('.modal-area').removeClass('active');
+    });
+});
+
+
 
 // /* スクロールアニメーション */
 // $('.contents-index').css('visibility', 'visible');
@@ -53,13 +70,16 @@ $(function(){
 // });
 
 
-//moreのクリック処理
-$(function(){
-    $('.click-more').on('click', function(e){
-        e.preventDefault();
-        $('.modal-area').fadeIn();//※修正（cssでfadeIn）
-    })
-    $('.close, .modal-bg').on('click', function(e){
-        $('.modal-area').fadeOut();//※修正（cssでfadeOut）
-    });
-});
+// //moreのクリック処理
+// $(function(){
+//     $('.click-more').on('click', function(e){
+//         e.preventDefault();
+//         $('.modal-area').fadeIn();//※修正（cssでfadeIn）
+//     })
+//     $('.close, .modal-bg').on('click', function(e){
+//         $('.modal-area').fadeOut();//※修正（cssでfadeOut）
+//     });
+// });
+
+
+
