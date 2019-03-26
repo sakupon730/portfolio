@@ -250,23 +250,25 @@
     line-height: 1.3;
 }
 
+
 /*== スクロールボタンの調整 ==*/
 .down-button-wt{
+    width: 3rem;
+    height: 3rem;
     position: absolute;
     bottom: 2rem;
     left: 50%;
     transform: translateX(-50%);
-    display: inline-block;
 }
 .down-button-wt a i{
-    width: 3rem;
-    height: 3rem;
     color: #fff;
 }
 
 
-
 /*== introductionとContentsのタイトル部分の記述 ==*/
+.btnOfSmall{
+    display: none;
+}
 .intro-area{
     background-color: #292F33;
     padding: 6rem 0;
@@ -366,9 +368,43 @@
 }
 
 
+/* down-button-bkのスクロールアニメーション */
+/* 
+.down-button-bk{
+    opacity: 0;
+    animation-delay: 1.4s;
+}
+.bkButtonFadeInUp{
+    opacity: 0;
+    animation-name: bkButtonFadeInUp;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
+    visibility: visible;
+}
+
+@keyframes bkButtonFadeInUp{
+    from{
+        opacity: 0;
+        bottom: 1rem;
+    }to{
+        opacity: 1;
+    }
+} */
+/*== スクロールボタンブラックの記述 ==*/
+
+.down-button-bk{
+    width: 3rem;
+    height: 3rem;
+    margin: 0 auto;
+
+}
+.down-button-bk a i{
+    color: #292F33;
+}
+
+
 
 /* スクロールアニメーション */
-
 .title,
 .intro-txt,
 .contents-index,
@@ -377,15 +413,16 @@
 .profile,
 .comment,
 .works-item,
-.contact{
-    opacity: 1;/* 0を1に変えた */
+.contact,
+.down-button-bk{
+    opacity: 0;/* 0を1に変えた */
 }
 .scrollFadeInUp{
-    opacity: 1;/* 0を1に変えた */
+    opacity: 0;/* 0を1に変えた */
     animation-name: scrollFadeInUp;
-    animation-duration: .6s;
+    animation-duration: .5s;
     animation-fill-mode: forwards;
-    visibility: visible !important;
+    visibility: visible;
 }
 .ft-title{
     animation-delay: 0s;
@@ -404,6 +441,9 @@
 }
 .contents-index:nth-child(3){
     animation-delay: 1.2s;
+}
+.down-button-bk{
+    animation-delay: 1.4s;
 }
 .works-item:nth-child(2){
     animation-delay: .2s;
@@ -431,39 +471,6 @@
 }
 
 
-/* down-button-bkのスクロールアニメーション */
-.down-button-bk{
-    opacity: 1;/* 0を1に変更した */
-}
-.bkButtonFadeInUp{
-    opacity: 1;/* 0を1に変更した */
-    animation-name: bkButtonFadeInUp;
-    animation-duration: .6s;
-    animation-fill-mode: forwards;
-    visibility: visible !important;
-}
-@keyframes bkButtonFadeInUp{
-    from{
-        opacity: 0;
-        bottom: 1rem;
-    }to{
-        opacity: 1;
-    }
-}
-
-
-/*== スクロールボタンブラックの記述 ==*/
-.down-button-bk{
-    width: 3rem;
-    height: 3rem;
-    position: absolute;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.down-button-bk a i{
-    color: #292F33;
-}
 
 
 

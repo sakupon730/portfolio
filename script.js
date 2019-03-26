@@ -44,42 +44,31 @@ $(function(){
         e.preventDefault();
         $('.modal-area').removeClass('active');
     });
+
 });
 
 
 
 // /* スクロールアニメーション */
-// $('.contents-index').css('visibility', 'visible');
-// $(window).scroll(function(){
-//     var windowHeight = $(window).height();
-//     var topWindow = $(window).scrollTop();
-
-//     $('.down-button-bk').each(function(){
-//         var targetPosition = $(this).offset().top;
-//         if(topWindow > targetPosition - windowHeight + 30){
-//             $(this).addClass("bkButtonFadeInUp");
-//         }
-//     });
-
-//     $('.contents-index, .title, .intro-txt, .ct-ttl, .pf-img, .profile, .comment, .works-item, .contact').each(function(){
-//         var targetPosition = $(this).offset().top;
-//         if(topWindow > targetPosition - windowHeight + 80){
-//             $(this).addClass("scrollFadeInUp");
-//         }
-//     });
-// });
+//$('.contents-index').css('visibility', 'visible');
+$(window).scroll(function(){
+    var windowHeight = $(window).height();
+    var topWindow = $(window).scrollTop();
 
 
-// //moreのクリック処理
-// $(function(){
-//     $('.click-more').on('click', function(e){
-//         e.preventDefault();
-//         $('.modal-area').fadeIn();//※修正（cssでfadeIn）
-//     })
-//     $('.close, .modal-bg').on('click', function(e){
-//         $('.modal-area').fadeOut();//※修正（cssでfadeOut）
-//     });
-// });
+    // $('.down-button-bk').each(function(){
+    //     var targetPosition = $(this).offset().top;
+    //     if(topWindow > targetPosition - windowHeight + 30){
+    //         $(this).addClass('bkButtonFadeInUp');
+    //     }
+    // });
 
+    $('.contents-index, .title, .intro-txt, .ct-ttl, .pf-img, .profile, .comment, .works-item, .contact, .down-button-bk, .btnOfSmall').each(function(){
+        var targetPosition = $(this).offset().top;
+        if(topWindow > targetPosition - windowHeight + 40){
+            $(this).addClass('scrollFadeInUp');
+        }
+    });
+});
 
 

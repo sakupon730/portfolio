@@ -131,12 +131,29 @@ img{
 
 /* Introductionの記述 */
 .intro-area{    
-    position: relative;
     height: 100vh;
     padding-top: 16rem;
-    padding-bottom: 0;
     margin-bottom: 8rem;
 }
+
+
+.btnOfSmall{
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    margin: 15rem auto 0 auto;
+    opacity: 0;
+    animation-delay: .4s;
+} 
+.btnOfSmall a i{
+    color: #fff;
+}
+.contents-index{
+    animation-delay: 0s;
+}
+
+
+
 .title{
     font-size: 2.4rem;
     margin-bottom: 3rem;
