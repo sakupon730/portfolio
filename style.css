@@ -212,7 +212,7 @@
 
 /*====================main====================*/
 /*== メインコンテンツの領域設定 ==*/
-.top-container{
+.main-container{
     width: 80%;
     float: right;
 }
@@ -278,7 +278,7 @@
     background-color: #fff;
     padding: 0;
     width: 100%;
-    margin: 0 auto 5rem auto;
+    margin: 0 auto 8rem auto;
 }
 .title{
     position: relative;
@@ -331,7 +331,9 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    margin-bottom: 6rem;
+}
+.ct-ttl:first-child{
+    padding-top: 6rem;
 }
 
 
@@ -469,6 +471,7 @@
         transform: translateY(0);
     }
 }
+
 
 
 

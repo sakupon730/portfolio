@@ -22,7 +22,7 @@ img{
     width: 100%;
     height: auto;
 }
-.top-container{
+.main-container{
     width: 100%;
 }
 .bar-position h2{
@@ -218,4 +218,8 @@ img{
 /* アニメーションのオフ */
 .sideIn{
     animation: none;
+}
+
+.ct-ttl:first-child{
+    padding-top: 0rem;
 }

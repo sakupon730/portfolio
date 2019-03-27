@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="./style.css" type="text/css"><!-- cssファイルの宣言 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!-- jQueryの宣言 -->
     <script type="text/javascript" src="./script.js"></script><!-- jsファイルの読み込み -->
+    <script src="./scrollify/jquery.scrollify.js"></script><!-- scrollifyの読み込み -->
+
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"><!-- google fontの読み込み -->
     <link href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css" rel="stylesheet"><!-- iconmonstrの読み込み -->
     <link rel="stylesheet" href="small.css" media="screen and (max-width:480px)">
@@ -50,24 +52,26 @@
 
 
     <!-- メインコンテンツの記述 -->
-    <main class="top-container">
+    <main class="main-container">
         <!-- main-imgの記述 -->
-        <div class="top-img">
-            <div class="img-mask"></div>
-            <div class="center-text">
-                <h1 class="fadeInUp">
-                    <span>Welcome<br>to<br></span>
-                    <span>Sakupon.net</span>
-                </h1>
+        <section class="top-container box">
+            <div class="top-img">
+                <div class="img-mask"></div>
+                <div class="center-text">
+                    <h1 class="fadeInUp">
+                        <span>Welcome<br>to<br></span>
+                        <span>Sakupon.net</span>
+                    </h1>
+                </div>
+                <div class="down-button-wt fadeInUp-delay">
+                    <a href="" id="arrow-btn-ft"><i class="im im-angle-down"></i></a>
+                </div>
             </div>
-            <div class="down-button-wt fadeInUp-delay">
-                <a href="" id="arrow-btn-ft"><i class="im im-angle-down"></i></a>
-            </div>
-        </div>
+        </section>
 
 
         <!-- contentsとIntroductionの記述 -->
-        <section class="sd-container">
+        <section class="sd-container box">
             <section class="intro-area">
                 <h2 class="title ft-title"><span>Introduction</span></h2>
                 <p class="intro-txt">
@@ -75,8 +79,9 @@
                     <span>このサイトは、将来フロントエンドエンジニアとして活躍するための第一歩として、webを勉強中のわたくしさくぽんが制作したポートフォリオサイトです。</span>
                     <span>インターンや就職活動等を通して少しでも多くの方に見ていただければ幸いです。</span>
                 </p>
-                <div class="btnOfSmall"><!-- small.cssでしか表示させないンゴ -->
-                    <a href="" id="arrow-btn-sd"><i class="im im-angle-down"></i></a>
+                
+                <div class="btnOfSmall"><!-- small.cssでのみ表示 -->
+                    <a href="" id="arrow-btn-small"><i class="im im-angle-down"></i></a>
                 </div>
             </section>
             
@@ -114,7 +119,7 @@
         </section>
 
 
-        <section class="contents-item">
+        <section class="contents-item box">
             <section id="about">
                 <h3 class="ct-ttl">About</h3>
                 <section class="pf-img"></section>
@@ -287,14 +292,8 @@
             <div class="home">
                 <a href="">Sakupon.net</a>
             </div>
-
-
                 
         </section>
-
-
-
-
     </main>
 </body>
 </html>
