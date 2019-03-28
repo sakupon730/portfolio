@@ -2,7 +2,7 @@
 /********** メニュークリック時のスムーススクロールの記述 **********/
 $(function(){
     $('a[href^="#"]').click(function(){
-      var speed = 500;
+      var speed = 800;
       var href= $(this).attr("href");
       var target = $(href == "#" || href == "" ? 'html' : href);
       var position = target.offset().top;
@@ -13,77 +13,77 @@ $(function(){
 
 
 
-/********** スムーススクロールの記述 **********/
-$(function(){
-    var current;
-    var w = $(window).width();
+// /********** スムーススクロールの記述 **********/
+// $(function(){
+//     var current;
+//     var w = $(window).width();
 
-    if(w >= 601 && 960 >= w){//横幅601~960pxの時のスムーススクロール
-        $.scrollify({
-            section: '.large',
-            setHeights:false,
-            easing:'swing',
-            scrollSpeed:1000,
-            before:function(i,large){
-            current = i;
-            },
-        });
-        $(window).on('resize',function(){
-            if(current){
-                var currentScrl = $('.large').eq(current).offset().top;
-                $(window).scrollTop(currentScrl);
-            }
-        });    
-    }else if(w >= 481 && 600 >= w){//横幅481~600pxの時のスムーススクロール
-        $.scrollify({
-            section: '.midi',
-            setHeights:false,
-            easing:'swing',
-            scrollSpeed:1000,
-            before:function(i,midi){
-            current = i;
-            },
-        });
-        $(window).on('resize',function(){
-            if(current){
-                var currentScrl = $('.midi').eq(current).offset().top;
-                $(window).scrollTop(currentScrl);
-            }
-        });    
-    }else if(w <= 480){//横幅480px以下時のスムーススクロール
-        $.scrollify({
-            section: '.small',
-            setHeights:false,
-            easing:'swing',
-            scrollSpeed:1000,
-            before:function(i,small){
-            current = i;
-            },
-        });
-        $(window).on('resize',function(){
-            if(current){
-                var currentScrl = $('.small').eq(current).offset().top;
-                $(window).scrollTop(currentScrl);
-            }
-        });    
-    }else{//通常サイズ時のスムーススクロール
-        $.scrollify({
-            section: '.nomal',
-            setHeights:false,
-            easing:'swing',
-            scrollSpeed:1000,
-            before:function(i,nomal){
-            current = i;
-            },
-        });
-        $(window).on('resize',function(){
-            if(current){
-                var currentScrl = $('.nomal').eq(current).offset().top;
-                $(window).scrollTop(currentScrl);
-            }
-        });    
-    }
-});    
+//     if(w >= 601 && 960 >= w){//横幅601~960pxの時のスムーススクロール
+//         $.scrollify({
+//             section: '.large',
+//             setHeights:false,
+//             easing:'swing',
+//             scrollSpeed:1000,
+//             before:function(i,large){
+//             current = i;
+//             },
+//         });
+//         $(window).on('resize',function(){
+//             if(current){
+//                 var currentScrl = $('.large').eq(current).offset().top;
+//                 $(window).scrollTop(currentScrl);
+//             }
+//         });    
+//     }else if(w >= 481 && 600 >= w){//横幅481~600pxの時のスムーススクロール
+//         $.scrollify({
+//             section: '.midi',
+//             setHeights:false,
+//             easing:'swing',
+//             scrollSpeed:1000,
+//             before:function(i,midi){
+//             current = i;
+//             },
+//         });
+//         $(window).on('resize',function(){
+//             if(current){
+//                 var currentScrl = $('.midi').eq(current).offset().top;
+//                 $(window).scrollTop(currentScrl);
+//             }
+//         });    
+//     }else if(w <= 480){//横幅480px以下時のスムーススクロール
+//         $.scrollify({
+//             section: '.small',
+//             setHeights:false,
+//             easing:'swing',
+//             scrollSpeed:1000,
+//             before:function(i,small){
+//             current = i;
+//             },
+//         });
+//         $(window).on('resize',function(){
+//             if(current){
+//                 var currentScrl = $('.small').eq(current).offset().top;
+//                 $(window).scrollTop(currentScrl);
+//             }
+//         });    
+//     }else{//通常サイズ時のスムーススクロール
+//         $.scrollify({
+//             section: '.nomal',
+//             setHeights:false,
+//             easing:'swing',
+//             scrollSpeed:1000,
+//             before:function(i,nomal){
+//             current = i;
+//             },
+//         });
+//         $(window).on('resize',function(){
+//             if(current){
+//                 var currentScrl = $('.nomal').eq(current).offset().top;
+//                 $(window).scrollTop(currentScrl);
+//             }
+//         });    
+//     }
+// });    
 
 
 
