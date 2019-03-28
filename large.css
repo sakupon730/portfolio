@@ -232,11 +232,26 @@ img{
 .works-item:nth-child(6){
     animation-delay: .2s;
 }
-
+#about{
+    padding-top: 8rem;
+}
 #works{
     width: 80%;
+    padding-top: 8rem;
+    margin-bottom: 0;
 }
-#about{
+#contact{
     margin-bottom: 10rem;
+    padding-top: 9.2rem;
+}
+.contents-area{
+    margin-bottom: 0;
+}
+.profile,
+.comment{
+    margin-bottom: 4rem;
+}
+.contents-index{
+    margin-bottom: 4rem;
 }
 /******************** ここまで ********************/

@@ -148,76 +148,6 @@ img{
 }
 
 
-/**************** 追記 ******************/
-/* Introductionの記述 */
-.intro-area{
-    position: relative;
-    height: 100vh;
-    /* padding-top: 20rem; */
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-.contents-area{
-    padding-top: 12rem;
-}
-.btnOfSmall{
-    position: absolute;
-    display: block;
-    width: 3rem;
-    height: 3rem;
-    right: 50%;
-    transform: translate(-50%);
-    bottom: 2rem;
-    opacity: 0;
-} 
-.btnOfSmall a i{
-    color: #fff;
-}
-.contents-index{
-    animation-delay: 0s;
-}
-.contents-index:nth-child(3){
-    margin-bottom: 0;
-}
-/* intro-areaの変更 */
-.intro-txt{
-    /* margin-bottom: 19rem; */
-}
-.intro-txt span{
-    display: block;
-    margin-bottom: 3rem;
-}
-.sd-title{
-    animation-delay: 0s;
-}
-.contents-index:nth-child(1){
-    animation-delay: .2s; 
-}
-.contents-index:nth-child(2){
-    animation-delay: .2s;
-}
-.contents-index:nth-child(3){
-    animation-delay: .2s;
-}
-.btnOfSmall{
-    animation-delay: .4s;
-}
-.works-item:nth-child(2),
-.works-item:nth-child(3),
-.works-item:nth-child(4),
-.works-item:nth-child(5),
-.works-item:nth-child(6){
-    animation-delay: 0s;
-}
-
-#center{
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-/**************** ここまで ******************/
 
 /* Contentsの記述 */
 .contents-area{
@@ -291,4 +221,122 @@ img{
 .sideIn{
     animation: none;
 }
+
+
+
+/**************** 追記 ******************/
+/* Introductionの記述 */
+.intro-area{
+    position: relative;
+    height: 100vh;
+    /* padding-top: 20rem; */
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.contents-area{
+    padding-top: 12rem;
+}
+.btnOfSmall{
+    position: absolute;
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    right: 50%;
+    transform: translate(-50%);
+    bottom: 2rem;
+    opacity: 0;
+} 
+.btnOfSmall a i{
+    color: #fff;
+}
+.contents-index{
+    animation-delay: 0s;
+}
+.contents-index:nth-child(3){
+    margin-bottom: 0;
+}
+/* intro-areaの変更 */
+.intro-txt{
+    /* margin-bottom: 19rem; */
+}
+.intro-txt span{
+    display: block;
+    margin-bottom: 3rem;
+}
+.sd-title{
+    animation-delay: 0s;
+}
+.contents-index:nth-child(1){
+    animation-delay: .2s; 
+}
+.contents-index:nth-child(2){
+    animation-delay: .2s;
+}
+.contents-index:nth-child(3){
+    animation-delay: .2s;
+}
+.btnOfSmall{
+    animation-delay: .4s;
+}
+.works-item:nth-child(2),
+.works-item:nth-child(3),
+.works-item:nth-child(4),
+.works-item:nth-child(5),
+.works-item:nth-child(6){
+    animation-delay: 0s;
+}
+
+#center{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.center-text h1{
+    font-size: 3rem;
+}
+.title{
+    font-size: 2.4rem;
+}
+.intro-txt{
+    font-size: 1.4rem;
+}
+.contents-index h3{
+    font-size: 2.2rem;
+}
+.ct-ttl{
+    font-size: 2.4rem;
+}
+.ct-ttl:after{
+    height: .3rem;
+}
+.ab-subttl{
+    font-size: 2.2rem;
+}
+.contents-area{
+    padding-top: 8rem;
+}
+#about{
+    padding-top: 8rem;
+    margin-bottom: 0;
+}
+#works{
+    padding-top: 8rem;
+    margin-bottom: 0;
+}
+.comment{
+    margin-bottom: 0;
+}
+#contact{
+    padding-top: 8rem;
+}
+.ct-ttl:first-child{
+    padding: 0;
+}
+.works-item:nth-child(6){
+    margin-bottom: 0;
+}
+/**************** ここまで ******************/
+
 
