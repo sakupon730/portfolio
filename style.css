@@ -479,9 +479,9 @@
 
 /*============== aboutの幅調節 ============*/
 #about{
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
 /*== profileとcommentの記述 ==*/
 .pf-img{
@@ -498,7 +498,7 @@
 }
 .profile,
 .comment{
-    width: 90%;
+    width: 70%;
     box-shadow: .1rem .1rem .1rem .1rem#ececec;
     margin: 0 auto 4rem;
     padding: 1.5rem 2rem 1.5rem;

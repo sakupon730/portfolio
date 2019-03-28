@@ -1,4 +1,18 @@
-/********** スムーススクロールの処理 **********/
+/********** メニュークリック時のスムーススクロールの記述 **********/
+$(function(){
+    $('a[href^="#"]').click(function(){
+      var speed = 500;
+      var href= $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top;
+      $("html, body").animate({scrollTop:position}, speed, "swing");
+      return false;
+    });
+});
+
+
+
+/********** スムーススクロールの記述 **********/
 $(function(){
     var current;
     var w = $(window).width();
@@ -73,11 +87,16 @@ $(function(){
 
 
 
-/********** ハンバーガーメニュー **********/
+/********** ハンバーガーメニューの記述 **********/
 $(function(){
-    $('#menu-btn, #menu-bg').on('click',function(){
+    $('#menu-btn').on('click',function(){
       $(this).toggleClass('active');
       $('#hbg-menu').toggleClass('active');
+
+      //ページ内リンクがクリックされた時にハンバーガーメニューを消す処理
+      $('#ab-link, #wo-link, #co-link').on('click', function(){
+        $('#menu-btn, #hbg-menu').removeClass('active');
+      });
     });
 });
 
@@ -100,6 +119,8 @@ $(function(){
     });
 
 });
+
+
 
 
 
@@ -135,6 +156,3 @@ $(window).scroll(function(){
         });
     }
 });
-
-
-	
