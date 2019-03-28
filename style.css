@@ -439,13 +439,13 @@
     animation-delay: .6s;
 }
 .contents-index:nth-child(2){
-    animation-delay: .9s;
+    animation-delay: .8s;
 }
 .contents-index:nth-child(3){
-    animation-delay: 1.2s;
+    animation-delay: 1s;
 }
 .down-button-bk{
-    animation-delay: 1.4s;
+    animation-delay: 1.2s;
 }
 .works-item:nth-child(2){
     animation-delay: .2s;
