@@ -1,6 +1,4 @@
-/*=======================================
-リセット
-=======================================*/
+/******************** reset css *******************/
 * {
     margin: 0;
     padding: 0;
@@ -42,34 +40,33 @@
   main {
     display:block; /* for IE11 */
   }
-  
-  /*=======================================
-  共通部分
-  =======================================*/
-  
-  /* サイト全体共通 */
-  
-  body {
+
+
+
+
+/******************** 共通部分 *******************/
+body {
     background-color: #fff;
     font-family: "MS ゴシック"
-  }
-  a{
+}
+a{
     text-decoration: none;
     color: #292F33;
     display: block;
-  }
-  a:hover{
+}
+a:hover{
     cursor: pointer;
-  }
-  .clearfix:after{
+}
+.clearfix:after{
     content: "";
     display: block;
     clear: both;
-  }
+}
 
 
-/*====================header===============-*/
-/*== header共通 ==*/
+/************************************************
+********************* header ********************
+************************************************/
 .side-bar a{
   color: #fff;
 }
@@ -79,7 +76,8 @@
     display: inline-block;
 }
 
-/*== side-barの位置指定 ==*/
+
+/********* side-barの位置指定 **********/
 .side-bar{
     position: relative;
 }
@@ -92,98 +90,15 @@
     background-color: #292F33;
 }
 
-/* sakupon.netのアニメーション */
-.sideIn{
-    animation-name: sideIn;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-@keyframes sideIn{
-    from{
-        margin-left: 1rem;
-        opacity: 0;
-    }to{
-        opacity: 1;
-    }
-}
 
-/* contents-listのアニメーション */
-.contents-list ul li{
-    animation-name: sideInFast;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-}
-.contents-list ul li:nth-child(1){
-    animation-delay: .4s;
-}
-.contents-list ul li:nth-child(2){
-    animation-delay: .5s;
-}
-.contents-list ul li:nth-child(3){
-    animation-delay: .6s;
-}
-.contents-list ul li:nth-child(4){
-    animation-delay: .7s;
-}
-@keyframes sideInFast{
-    from{
-        margin-left: .1rem;
-        opacity: 0;
-    }to{
-        opacity: 1;
-    }
-}
-
-/* .sns-listのアニメーション */
-.sns-list ul li{
-    animation-name: fadeIn;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-}
-.sns-list ul li:nth-child(1){
-    animation-delay: .9s;
-}
-.sns-list ul li:nth-child(2){
-    animation-delay: 1.1s;
-}
-@keyframes fadeIn{
-    from{
-        opacity: 0;
-    }to{
-        opacity: 1;
-    }
-}
-
-
-/* welcom to sakupon.net, 矢印, sns-listのアニメーション */
-.fadeInUp,
-.fadeInUp-delay{
-    opacity: 0;
-    animation-name: fadeInUp;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-.fadeInUp-delay{
-    animation-delay: 1.2s;
-}
-@keyframes fadeInUp{
-    from{
-        opacity: 0;
-        margin-bottom: -3rem;
-    }to{
-        opacity: 1;
-    }
-}
-
-/*== linkの見た目 ==*/
+/********* linkの見た目 **********/
 .bar-position h2{
   font-size: 2.2vw;
   margin: 14rem 0 5rem 3vw;
 }
 
-/*== contents-listの見た目調節 ==*/
+
+/********* contents-listの見た目 **********/
 .contents-list ul li{
     font-size: 1.6rem;
     margin: 0 0 2.6rem 3vw;
@@ -192,8 +107,8 @@
     margin-bottom: 5rem;
 }
 
-/*== sns-listの見た目調節 ==*/
 
+/********* sns-listの見た目 **********/
 .sns-list ul{
     display: flex;
 }
@@ -210,15 +125,20 @@
 }
 
 
-/*====================main====================*/
-/*== メインコンテンツの領域設定 ==*/
+
+
+/************************************************
+********************* main **********************
+************************************************/
+
+/********* main-containerの領域設定 **********/
 .main-container{
     width: 80%;
     float: right;
 }
 
 
-/*== main-imgの調整 ==*/
+/********* main-imgの記述 **********/
 .top-img{
     position: relative;
     width: 100%;
@@ -234,8 +154,7 @@
 }
 
 
-
-/*== main-textの調整 ==*/
+/********* center-textの記述 **********/
 .center-text{
     position: absolute;
     top: 50%;
@@ -251,7 +170,7 @@
 }
 
 
-/*== スクロールボタンの調整 ==*/
+/********* down-button-wtの記述 **********/
 .down-button-wt{
     width: 3rem;
     height: 3rem;
@@ -265,7 +184,7 @@
 }
 
 
-/*== introductionとContentsのタイトル部分の記述 ==*/
+/********* introductionとcontentsのタイトル部分の記述 **********/
 .btnOfSmall{
     display: none;
 }
@@ -326,18 +245,15 @@
 }
 
 
-/*== sd-containerの記述 ==*/
+/********* sd-containerの記述 **********/
 .sd-container{
     position: relative;
     width: 100%;
     height: 100vh;
 }
-/* .ct-ttl:first-child{
-    padding-top: 6rem;
-} */
 
 
-/*== contentsの内容の記述 ==*/
+/********* contentsの内容の記述 **********/
 .contents-group{
     width: 90%;
     margin: 0 auto;
@@ -370,35 +286,11 @@
 }
 
 
-/* down-button-bkのスクロールアニメーション */
-/* 
-.down-button-bk{
-    opacity: 0;
-    animation-delay: 1.4s;
-}
-.bkButtonFadeInUp{
-    opacity: 0;
-    animation-name: bkButtonFadeInUp;
-    animation-duration: .6s;
-    animation-fill-mode: forwards;
-    visibility: visible;
-}
-
-@keyframes bkButtonFadeInUp{
-    from{
-        opacity: 0;
-        bottom: 1rem;
-    }to{
-        opacity: 1;
-    }
-} */
-/*== スクロールボタンブラックの記述 ==*/
-
+/********* down-button-bkの記述 **********/
 .down-button-bk{
     width: 3rem;
     height: 3rem;
     margin: 0 auto;
-
 }
 .down-button-bk a i{
     color: #292F33;
@@ -406,7 +298,501 @@
 
 
 
-/* スクロールアニメーション */
+
+/************************************************
+********************* about *********************
+************************************************/
+
+#about{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    padding-top: 6rem;
+}
+
+
+/********* profileとcommentの記述 **********/
+.pf-img{
+    background: url(./img/profile.jpg);
+    display: block;
+    content: "";
+    width: 25rem;
+    height: 25rem;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-shadow: .2rem .2rem.2rem .2rem#ececec;
+    margin: 0 auto 4rem auto;
+}
+.profile,
+.comment{
+    width: 70%;
+    box-shadow: .1rem .1rem .1rem .1rem#ececec;
+    margin: 0 auto 4rem;
+    padding: 1.5rem 2rem 1.5rem;
+}
+.comment{
+    margin-bottom: 0;
+}
+
+
+/********* profileの記述 **********/
+.ab-subttl{
+    position: relative;
+    text-align: center;
+    font-size: 2.4rem;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    border-bottom: .1rem #292F33 dotted;
+    border-top: .1rem #292F33 dotted;
+}
+.pf-area{
+    width: 100%;
+}
+.pf-list{
+    width: 13rem;
+    float: left;
+    clear: left;
+    font-size: 1.4rem;
+    line-height: 1.3;
+    margin-bottom: .7rem;
+}
+.pf-list-ctt{
+    width: calc(100% - 13rem);
+    float: left;
+    line-height: 1.3;
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin-bottom: .7rem;
+}
+.pf-list:last-child,
+.pf-list-ctt:last-child{
+    margin-bottom: 0; 
+}
+.pf-list span{
+    margin-right: .8rem;
+    margin-left: .2rem;
+}
+.pf-list span i{
+    font-size: 1.2rem;
+    color: #93c9ff;
+}
+
+
+/********* commentの記述 **********/
+.comment p{
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+.comment p:nth-of-type(1),
+.comment p:nth-of-type(2){
+    margin-bottom: 1.6rem;
+}
+
+
+/********* ct-ttlの記述 **********/
+.ct-ttl{
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 5rem;
+}
+.ct-ttl:after{
+    content: "";
+    display: block;
+    width: 2.8rem;
+    height: .3rem;
+    background-color: #292F33;
+    margin: 2rem auto 0 auto;
+}
+
+
+
+
+/************************************************
+********************* works *********************
+************************************************/
+
+#works{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    padding-top: 6rem;
+}
+.works-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.works-item{
+    width: 30rem;
+    box-shadow: .1rem .1rem .1rem .1rem #ececec;
+    margin-bottom: 2rem;
+    padding: 1.8rem;
+    flex-direction: row;
+}
+.works-item figure{
+    width: 100%;
+    margin-bottom: 1.4rem;
+}
+.works-item figure img{
+    width: 100%;
+}
+.item-ttl{
+    font-size: 1.6rem;
+    margin-bottom: 1.4rem;
+}
+.works-item p{
+    font-size: 1.4rem;
+    line-height: 1.2;
+    margin-bottom: 1.2rem;
+}
+
+
+/********* moreボタンの記述 **********/
+.more{
+    text-align: right;
+}
+.more a{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.2rem;
+    border: .1rem #292F33 solid;
+    padding: .5rem .9rem .7rem .9rem;
+    z-index: 1;
+    overflow: hidden;
+    transition: all .5s;
+}
+.more a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #292F33;
+    z-index: -1;
+    transition: all .5s;
+}
+.more a:hover{
+    color: #fff;
+}
+.more a:hover::before{
+    left: 0;
+}
+
+
+/********* モーダルウィンドウの記述 **********/
+.modal-area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .6s;
+}
+
+.modal-area.active{
+    opacity: 1;
+    visibility: visible;
+}
+.modal-bg{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+.modal-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50rem;
+    background-color: #fff;
+    padding: 2rem 3rem;
+}
+.modal-content h2{
+    font-size: 2.2rem;
+    margin-bottom: 1.4rem;
+}
+.modal-content figure{
+    margin-bottom: 2rem;
+}
+.modal-content p{
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin-bottom: 2.4rem;
+}
+.close button{
+    background-color: #fff;
+}
+
+
+/********* ×ボタンの記述 **********/
+.close button{
+    width: 2rem;
+    height: 2rem;
+    outline: 0;
+    border: none;
+}
+.close button::before,
+.close button::after{
+    content: "";
+    display: block;
+    width: 1rem;
+    position: absolute;
+    border: 1px #292F33 solid;
+}
+.close button::before{
+    transform: rotate(-45deg);
+}
+.close button::after{
+    transform: rotate(45deg);
+}
+.close-fixed{
+    position: relative;
+}
+.close{
+    position: absolute;
+    top: 1rem;
+    right: .4rem;
+}
+
+
+/********* view codeボタンの記述 **********/
+.code{
+    display: inline-block;
+    vertical-align: top;
+}
+.view-code{
+    position: relative;
+    display: inline-block;
+    padding: .8rem 1.4rem;
+    border: .1px #292F33 solid;
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: #292F33;
+    background: #fff;
+    outline: 0;
+    transition: all .5s;
+    overflow: hidden;
+    z-index: 1;
+}
+.view-code::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #292F33;
+    z-index: -1;
+    transition: all .5s;
+}
+.view-code:hover{
+    color: #fff;
+}
+.view-code:hover::before{
+    left: 0;
+}
+.code{
+    display: block;
+    text-align: center;
+}
+
+
+
+
+/************************************************
+********************* contact *******************
+************************************************/
+
+#contact{
+    width: 63%;
+    margin: 0 auto 8rem auto;
+    padding-top: 6rem;
+}
+form{
+    width: 100%;
+    margin: 0 auto 4rem 0;
+    font-size: 1.4rem;
+}
+form p{
+    color: #f00;
+    margin-bottom: 1.4rem;
+}
+form div{
+    margin-bottom: 1.2rem;
+}
+form div label{
+    display: block;
+    margin-bottom: .6rem;
+}
+form div input{
+    width: 100%;
+    height: 2.4rem;
+    font-size: 1.4rem;
+    border: .1rem #292F33 solid;
+    padding: .3rem .4rem;
+    outline: 0;
+}
+textarea{
+    width: 100%;
+    height: 20rem;
+    font-size: 1.4rem;
+    border: .1rem #292F33 solid;
+    resize: none;
+    outline: 0;
+}
+
+/********* 送信ボタンの記述 **********/
+.submit-btn{
+    text-align: center;
+}
+.submit-btn button{
+    position: relative;
+    display: inline-block;
+    font-size: 1.4rem;
+    border: .1rem #292F33 solid;
+    color: #292F33;
+    padding: .4rem 1.8rem;
+    z-index: 1;
+    overflow: hidden;
+    transition: all .5s;
+    outline: 0;
+}
+.submit-btn button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #292F33;
+    z-index: -1;
+    transition: all .5s;
+}
+.submit-btn button:hover{
+    color: #fff;
+}
+.submit-btn button:hover::before{
+    left: 0;
+}
+
+
+
+
+/************************************************
+********************* footer ********************
+************************************************/
+
+.home{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.home a{
+    display: inline-block;
+    font-size: 1.6rem;
+}
+
+
+
+
+/************************************************
+****************** animation ********************
+************************************************/
+
+/********* sakupon.netのアニメーション **********/
+.sideIn{
+    animation-name: sideIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes sideIn{
+    from{
+        margin-left: 1rem;
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+
+/********* contents-listのアニメーション **********/
+.contents-list ul li{
+    animation-name: sideInFast;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+.contents-list ul li:nth-child(1){
+    animation-delay: .4s;
+}
+.contents-list ul li:nth-child(2){
+    animation-delay: .5s;
+}
+.contents-list ul li:nth-child(3){
+    animation-delay: .6s;
+}
+.contents-list ul li:nth-child(4){
+    animation-delay: .7s;
+}
+@keyframes sideInFast{
+    from{
+        margin-left: .1rem;
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+
+/********* .sns-listのアニメーション **********/
+.sns-list ul li{
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+.sns-list ul li:nth-child(1){
+    animation-delay: .9s;
+}
+.sns-list ul li:nth-child(2){
+    animation-delay: 1.1s;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+
+/********* welcom to sakupon.net, 矢印, sns-listのアニメーション **********/
+.fadeInUp,
+.fadeInUp-delay{
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.fadeInUp-delay{
+    animation-delay: 1.2s;
+}
+@keyframes fadeInUp{
+    from{
+        opacity: 0;
+        margin-bottom: -3rem;
+    }to{
+        opacity: 1;
+    }
+}
+
+
+/********* スクロールアニメーション **********/
 .title,
 .intro-txt,
 .contents-index,
@@ -417,10 +803,10 @@
 .works-item,
 .contact,
 .down-button-bk{
-    opacity: 0;/* 0を1に変えた */
+    opacity: 0;
 }
 .scrollFadeInUp{
-    opacity: 0;/* 0を1に変えた */
+    opacity: 0;
     animation-name: scrollFadeInUp;
     animation-duration: .5s;
     animation-fill-mode: forwards;
@@ -470,399 +856,4 @@
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-
-
-
-
-
-/*============== aboutの幅調節 ============*/
-#about{
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 5rem;
-    padding-top: 6rem;
-}
-/*== profileとcommentの記述 ==*/
-.pf-img{
-    background: url(./img/profile.jpg);
-    display: block;
-    content: "";
-    width: 25rem;
-    height: 25rem;
-    background-size: cover;
-    background-position: center;
-    border-radius: 50%;
-    box-shadow: .2rem .2rem.2rem .2rem#ececec;
-    margin: 0 auto 4rem auto;
-}
-.profile,
-.comment{
-    width: 70%;
-    box-shadow: .1rem .1rem .1rem .1rem#ececec;
-    margin: 0 auto 4rem;
-    padding: 1.5rem 2rem 1.5rem;
-}
-.comment{
-    margin-bottom: 0;
-}
-
-
-
-/*== profileの記述 ==*/
-.ab-subttl{
-    position: relative;
-    text-align: center;
-    font-size: 2.4rem;
-    padding: 1rem 0;
-    margin-bottom: 2rem;
-    border-bottom: .1rem #292F33 dotted;
-    border-top: .1rem #292F33 dotted;
-}
-.pf-area{
-    width: 100%;
-}
-.pf-list{
-    width: 13rem;
-    float: left;
-    clear: left;
-    font-size: 1.4rem;
-    line-height: 1.3;
-    margin-bottom: .7rem;
-}
-.pf-list-ctt{
-    width: calc(100% - 13rem);
-    float: left;
-    line-height: 1.3;
-    font-size: 1.4rem;
-    font-weight: normal;
-    margin-bottom: .7rem;
-}
-.pf-list:last-child,
-.pf-list-ctt:last-child{
-    margin-bottom: 0; 
-}
-.pf-list span{
-    margin-right: .8rem;
-    margin-left: .2rem;
-}
-.pf-list span i{
-    font-size: 1.2rem;
-    color: #93c9ff;
-}
-
-
-
-/*== commentの記述 ==*/
-.comment p{
-    font-size: 1.4rem;
-    line-height: 1.5;
-}
-.comment p:nth-of-type(1),
-.comment p:nth-of-type(2){
-    margin-bottom: 1.6rem;
-}
-
-
-
-/*== content-titleの記述 ==*/
-.ct-ttl{
-    text-align: center;
-    font-size: 2.8rem;
-    margin-bottom: 5rem;
-}
-.ct-ttl:after{
-    content: "";
-    display: block;
-    width: 2.8rem;
-    height: .5rem;
-    background-color: #292F33;
-    margin: 2rem auto 0 auto;
-}
-
-
-
-/*============= worksの記述 =============*/
-#works{
-    width: 90%;
-    margin: 0 auto;
-    margin-bottom: 5rem;
-    padding-top: 6rem;
-}
-.works-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-.works-item{
-    width: 30rem;
-    box-shadow: .1rem .1rem .1rem .1rem #ececec;
-    margin-bottom: 2.8rem;
-    padding: 1.8rem;
-    flex-direction: row;
-}
-.works-item figure{
-    width: 100%;
-    margin-bottom: 1.4rem;
-}
-.works-item figure img{
-    width: 100%;
-}
-.item-ttl{
-    font-size: 1.6rem;
-    margin-bottom: 1.4rem;
-}
-.works-item p{
-    font-size: 1.4rem;
-    line-height: 1.2;
-    margin-bottom: 1.2rem;
-}
-
-
-
-/*== moreボタンの記述 ==*/
-.more{
-    text-align: right;
-}
-.more a{
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    font-size: 1.2rem;
-    border: .1rem #292F33 solid;
-    padding: .5rem .9rem .7rem .9rem;
-    z-index: 1;
-    overflow: hidden;
-    transition: all .5s;
-}
-.more a::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: #292F33;
-    z-index: -1;
-    transition: all .5s;
-}
-.more a:hover{
-    color: #fff;
-}
-.more a:hover::before{
-    left: 0;
-}
-
-
-
-/*== モーダルウィンドウの記述==*/
-.modal-area {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 2;
-    opacity: 0;
-    visibility: hidden;
-    transition: all .6s;
-}
-
-.modal-area.active{
-    opacity: 1;
-    visibility: visible;
-}
-.modal-bg{
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5)
-}
-.modal-content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50rem;
-    background-color: #fff;
-    padding: 2rem 3rem;
-}
-.modal-content h2{
-    font-size: 2.2rem;
-    margin-bottom: 1.4rem;
-}
-.modal-content figure{
-    margin-bottom: 2rem;
-}
-.modal-content p{
-    font-size: 1.4rem;
-    line-height: 1.4;
-    margin-bottom: 2.4rem;
-}
-.close button{
-    background-color: #fff;
-}
-
-
-
-/*== ×ボタンの記述 ==*/
-.close button{
-    width: 2rem;
-    height: 2rem;
-    outline: 0;
-    border: none;
-}
-.close button::before,
-.close button::after{
-    content: "";
-    display: block;
-    width: 1rem;
-    position: absolute;
-    border: 1px #292F33 solid;
-}
-.close button::before{
-    transform: rotate(-45deg);
-}
-.close button::after{
-    transform: rotate(45deg);
-}
-.close-fixed{
-    position: relative;
-}
-.close{
-    position: absolute;
-    top: 1rem;
-    right: .4rem;
-}
-
-
-
-/*== view codeアニメーションの記述 ==*/
-.code{
-    display: inline-block;
-    vertical-align: top;
-}
-.view-code{
-    position: relative;
-    display: inline-block;
-    padding: .8rem 1.4rem;
-    border: .1px #292F33 solid;
-    cursor: pointer;
-    font-size: 1.8rem;
-    color: #292F33;
-    background: #fff;
-    outline: 0;
-    transition: all .5s;
-    overflow: hidden;
-    z-index: 1;
-}
-.view-code::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: #292F33;
-    z-index: -1;
-    transition: all .5s;
-}
-.view-code:hover{
-    color: #fff;
-}
-.view-code:hover::before{
-    left: 0;
-}
-.code{
-    display: block;
-    text-align: center;
-}
-
-
-
-/*=============== Contactの記述 ===============*/
-#contact{
-    width: 63%;
-    margin: 0 auto 8rem auto;
-    padding-top: 6rem;
-}
-form{
-    width: 100%;
-    margin: 0 auto 4rem 0;
-    font-size: 1.4rem;
-}
-form p{
-    color: #f00;
-    margin-bottom: 1.4rem;
-}
-form div{
-    margin-bottom: 1.2rem;
-}
-form div label{
-    display: block;
-    margin-bottom: .6rem;
-}
-form div input{
-    width: 100%;
-    height: 2.4rem;
-    font-size: 1.4rem;
-    border: .1rem #292F33 solid;
-    padding: .3rem .4rem;
-    outline: 0;
-}
-textarea{
-    width: 100%;
-    height: 20rem;
-    font-size: 1.4rem;
-    border: .1rem #292F33 solid;
-    resize: none;
-    outline: 0;
-}
-
-
-
-/*== 送信ボタンの記述 ==*/
-.submit-btn{
-    text-align: center;
-}
-.submit-btn button{
-    position: relative;
-    display: inline-block;
-    font-size: 1.4rem;
-    border: .1rem #292F33 solid;
-    color: #292F33;
-    padding: .4rem 1.8rem;
-    z-index: 1;
-    overflow: hidden;
-    transition: all .5s;
-    outline: 0;
-}
-.submit-btn button::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: #292F33;
-    z-index: -1;
-    transition: all .5s;
-}
-.submit-btn button:hover{
-    color: #fff;
-}
-.submit-btn button:hover::before{
-    left: 0;
-}
-
-
-
-/*================ footerのリンク ==============*/
-.home{
-    text-align: center;
-    margin-bottom: 4rem;
-}
-.home a{
-    display: inline-block;
-    font-size: 1.6rem;
 }

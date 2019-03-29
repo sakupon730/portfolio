@@ -1,4 +1,5 @@
-/*== レスポンシブのリセットcss ==*/
+/******************** reset css for responsive *******************/
+
 body{
     max-width: 100%;
 }
@@ -14,8 +15,12 @@ img{
 }
 
 
-/*== ここからレスポンシブの記述 ==*/
-/* サイドバーのレイアウト変更 */
+
+/************************************************
+******************* responsive ******************
+************************************************/
+
+/********* サイドバーのレイアウト変更 **********/
 .bar-position{
     z-index: 3;
     box-shadow: 0 .2rem rgba(0,0,0,0.2);
@@ -32,7 +37,7 @@ img{
 }
 
 
-/* メニューボタンの記述 */
+/********* メニューボタンの記述 **********/
 #menu-btn{
     position: fixed;
     top: 1.6rem;
@@ -81,7 +86,7 @@ img{
 }
 
 
-/* ハンバーガーメニューの記述 */
+/********* ハンバーガーメニューの記述 **********/
 #hbg-menu{
     position: absolute;
     top: 0;
@@ -115,12 +120,14 @@ img{
     font-size: 2rem;
     margin: 0;
     margin-bottom: 4rem;
+    opacity: 1;
 }
 .sns-list ul{
     padding: 0 2rem;
 }
 .sns-list ul li{
     margin: 0 1.2rem 0 0;
+    opacity: 1;
 }
 .sns-list ul li:last-child{
     margin-right: 0;
@@ -129,7 +136,11 @@ img{
     margin-left: 0;
 }
 
-/* Introductionの記述 */
+
+/********* Introduction **********/
+.intro-area{
+    padding-top: 10rem;
+}
 .title{
     font-size: 2.6rem;
     margin-bottom: 5rem;
@@ -138,14 +149,18 @@ img{
     margin-bottom: 3rem;
 }
 
-/* Contentsの記述 */
+
+/********* contents **********/
+.contents-area{
+    margin-bottom: 0;
+}
 .contents-group{
     display: block;
 }
 .contents-index{
     width: 100%;
     margin-right: 0;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
 }
 .contents-index h3{
     font-size: 2.4rem;
@@ -160,98 +175,83 @@ img{
     width: 28rem;
     margin: 0 auto;
 }
-/* 2個目の矢印を非表示に */
 .down-button-bk{
-    display: none;
+    display: none;/* contents下にある矢印を非表示に */
 }
 .sd-container{
     height: auto;
 }
 
 
-/* aboutの記述 */
+/********* about **********/
+#about{
+    padding-top: 8rem;
+}
 .profile,
 .comment{
     width: 100%;
+    margin-bottom: 4rem;
 }
 .pf-img{
     width: 23rem;
     height: 23rem;
 }
-
-/* works, contactの横幅変更 */
-#works,
-#contact{
-    width: 70%;
-}
-
-/* アニメーションのオフ */
-.sideIn{
-    animation: none;
-}
-
-.ct-ttl:first-child{
+.ct-ttl:first-child{/* Aboutのh3の余白調整 */
     padding-top: 0rem;
 }
 
 
-/******************** 追記 ********************/
-.intro-area{
-    padding-top: 10rem;
-}
-.ft-title{
-    animation-delay: 0s;
-}
-.intro-txt{
-    animation-delay: 0s;
-}
-.sd-title{
-    animation-delay: 0s;
-}
-.contents-index:nth-child(1){
-    animation-delay: 0s;
-}
-.contents-index:nth-child(2){
-    animation-delay: 0s;
-}
-.contents-index:nth-child(3){
-    animation-delay: 0s;
-}
-.works-item:nth-child(2){
-    animation-delay: .2s;
-}
-.works-item:nth-child(3){
-    animation-delay: 0s;
-}
-.works-item:nth-child(4){
-    animation-delay: .2s;
-}
-.works-item:nth-child(5){
-    animation-delay: 0s;
-}
-.works-item:nth-child(6){
-    animation-delay: .2s;
-}
-#about{
-    padding-top: 8rem;
-}
+/********* works **********/
 #works{
     width: 80%;
     padding-top: 8rem;
     margin-bottom: 0;
 }
+
+/********* contact **********/
 #contact{
-    margin-bottom: 10rem;
+    width: 80%;
     padding-top: 9.2rem;
+    margin-bottom: 10rem;
 }
-.contents-area{
-    margin-bottom: 0;
+
+
+/********* footer **********/
+.submit-btn button{
+    background-color: #fff;
 }
-.profile,
-.comment{
-    margin-bottom: 4rem;
+
+
+
+/************************************************
+****************** animation ********************
+************************************************/
+
+/********* sakupon.netのアニメーションのオフ **********/
+.sideIn{
+    animation: none;
 }
-.contents-index{
-    margin-bottom: 4rem;
+.sns-list ul li{
+    animation: none;
 }
-/******************** ここまで ********************/
+.contents-list ul li{
+    animation: none;
+}
+
+
+/********* 遅延時間変更 **********/
+.ft-title,
+.intro-txt,
+.sd-title,
+.contents-index:nth-child(1),
+.contents-index:nth-child(2),
+.contents-index:nth-child(3),
+.works-item:nth-child(3),
+.works-item:nth-child(5){
+    animation-delay: 0s;
+}
+.works-item:nth-child(2),
+.works-item:nth-child(4),
+.works-item:nth-child(6){
+    animation-delay: .2s;
+}

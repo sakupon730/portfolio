@@ -95,7 +95,7 @@ $(function(){
       $('#hbg-menu').toggleClass('active');
 
       //ページ内リンクがクリックされた時にハンバーガーメニューを消す処理
-      $('#ab-link, #wo-link, #co-link').on('click', function(){
+      $('#ab-link, #wo-link, #co-link, #top-link').on('click', function(){
         $('#menu-btn, #hbg-menu').removeClass('active');
       });
     });
@@ -134,25 +134,36 @@ $(window).scroll(function(){
     var windowWidth = $(window).width();
 
     if(windowWidth >= 960){
-        //通常サイズ時のアニメーション
-        $('.contents-index, .title, .intro-txt, .ct-ttl, .pf-img, .profile, .comment, .works-item, .contact, .down-button-bk, .btnOfSmall').each(function(){
+        //横幅960px以上のアニメーション
+        $('.contents-index, .title, .intro-txt, .ct-ttl, .pf-img, .profile, .comment, .works-item, .contact, .down-button-bk').each(function(){
             var targetPosition = $(this).offset().top;
             if(topWindow > targetPosition - windowHeight + 40){
                 $(this).addClass('scrollFadeInUp');
             }
         });
-    }else{
-        //レスポンシブ時のアニメーション
-        $('.contents-index, .title, .intro-txt, .ct-ttl, .pf-img, .profile, .comment, .works-item, .contact, .down-button-bk, .btnOfSmall').each(function(){
+    }else if(windowWidth >= 601 && 960 >= windowWidth){
+        //横幅601~960pxの時のアニメーションの処理
+        $('.contents-index, .title, .intro-txt, .ct-ttl, .pf-img, .profile, .comment, .works-item, .contact, .title, .intro-txt').each(function(){
             var targetPosition = $(this).offset().top;
             if(topWindow > targetPosition - windowHeight + 120){
                 $(this).addClass('scrollFadeInUp');
             }
         });
-        $('.title, .intro-txt, .btnOfSmall').each(function(){
+    }else{
+        //横幅480px以下, 横幅481~600pxのアニメーション
+        $('.contents-index, .title, .intro-txt, .ct-ttl, .pf-img, .profile, .comment, .works-item, .contact').each(function(){
+            var targetPosition = $(this).offset().top;
+            if(topWindow > targetPosition - windowHeight + 120){
+                $(this).addClass('scrollFadeInUp');
+            }
+        });
+
+        //introductionのアニメーションの処理
+        $('.title, .intro-txt').each(function(){
             var targetPosition = $(this).offset().top;
             if(topWindow > targetPosition - windowHeight + 40){
                 $(this).addClass('scrollFadeInUp');
+                $('.btnOfSmall').addClass('fadeInUp');
             }
         });
     }

@@ -1,4 +1,5 @@
-/*============ レスポンシブのリセットcss ============*/
+/******************** reset css for responsive *******************/
+
 body{
     max-width: 100%;
 }
@@ -14,8 +15,12 @@ img{
 }
 
 
-/*== ここからレスポンシブの記述 ==*/
-/* サイドバーのレイアウト変更 */
+
+/************************************************
+******************* responsive ******************
+************************************************/
+
+/********* サイドバーのレイアウト変更 **********/
 .bar-position{
     z-index: 3;
     box-shadow: 0 .2rem rgba(0,0,0,0.2);
@@ -27,27 +32,27 @@ img{
 }
 .bar-position h2{
     font-size: 2rem;
-    padding: 1.6rem 2rem;
+    padding: 1.4rem 1.4rem;
     margin: 0;
 }
 
 
-/* メニューボタンの記述 */
+/********* メニューボタンの記述 **********/
 #menu-btn{
     position: fixed;
-    top: 1.6rem;
-    right: 2.2rem;
     width: 3rem;
     height: 1.6rem;
+    top: 1.6rem;
+    right: 1.4rem;
     cursor: pointer;
     z-index: 4;
 }
 #menu-btn span{
-    position: absolute;
     display: block;
-    top: 50%;
+    position: absolute;
     width: 100%;
     height: .15rem;
+    top: 50%;
     background: #fff;
     border-radius: .2rem;
     transition: all .6s;
@@ -56,11 +61,11 @@ img{
 #menu-btn span::after{
     content: "";
     display: block;
+    position: absolute;
     width: 100%;
     background: #fff;
     border-radius: .2rem;
     transition: all .6s;
-    position: absolute;
 }
 #menu-btn span::before{
     height: .15rem;
@@ -71,22 +76,22 @@ img{
     top: .8rem;
 }
 #menu-btn.active span:before {
-    transform: translateY(.8rem) rotate(-45deg);/*反時計回りに45度*/
+    transform: translateY(.8rem) rotate(-45deg);/* 反時計回りに45度 */
 }
 #menu-btn.active span:after {
-    transform: translateY(-.8rem) rotate(45deg);/*時計回りに45度*/
+    transform: translateY(-.8rem) rotate(45deg);/* 時計回りに45度 */
 }
 #menu-btn.active span{
     background-color: transparent;
 }
 
 
-/* ハンバーガーメニューの記述 */
+/********* ハンバーガーメニューの記述 **********/
 #hbg-menu{
     position: absolute;
-    top: 0;
     width: 100%;
     height: 100vh;
+    top: 0;
     background: rgba(0,0,0,0.8);
     z-index: 6;
     opacity: 0;
@@ -112,15 +117,13 @@ img{
     text-align: center;
 }
 .contents-list ul li{
-    font-size: 1.8rem;
-    margin: 0;
-    margin-bottom: 4rem;
-}
-.sns-list ul{
-    padding: 0 2rem;
+    font-size: 1.6rem;
+    margin: 0 0 4rem 0;
+    opacity: 1;
 }
 .sns-list ul li{
     margin: 0 1.2rem 0 0;
+    opacity: 1;
 }
 .sns-list ul li:last-child{
     margin-right: 0;
@@ -129,57 +132,88 @@ img{
     margin-left: 0;
 }
 
-/* Introductionの記述 */
-.intro-area{
-    position: relative;/* 追記 */
-    height: 100vh;
-    padding-top: 16rem;
-    margin-bottom: 0;
-}
-.contents-area{
-    padding-top: 8rem;
+
+/********* top-container **********/
+.center-text h1{
+    font-size: 3rem;
 }
 
-/* .btnOfSmall{
-    display: block;
-    width: 3rem;
-    height: 3rem;
-    margin: 15rem auto 0 auto;
-    opacity: 0;
-    animation-delay: .4s;
-}  */
-.btnOfSmall a i{
-    color: #fff;
-}
-.contents-index{
-    animation-delay: 0s;
-}
 
+
+
+/********* Introduction, Contents共通 **********/
+.sd-container{
+    height: auto;
+}
 .title{
     font-size: 2.4rem;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 }
 .title:after{
     width: 80%;
 }
-.intro-txt{
-    width: 70%;
-}
-.ft-title{
-    margin-bottom: 3rem;
+.title span{
+    padding: 0 1rem;
 }
 
-/* Contentsの記述 */
-.contents-area{
-    margin-bottom: 6rem;
+
+/********* Introduction **********/
+.intro-area{
+    position: relative;/* 追記 */
+    height: 100vh;
+    padding: 0;
+    margin-bottom: 0;
 }
+#center{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.intro-txt{
+    width: 80%;
+}
+.intro-txt span{
+    display: block;
+    margin-bottom: 3rem;
+}
+.intro-txt span:last-child{
+    margin-bottom: 0;
+}
+
+
+/********* Introductionの白矢印の記述 **********/
+.btnOfSmall{
+    display: block;
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    bottom: 2rem;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 0 auto;
+    opacity: 0;
+}
+.btnOfSmall a i{
+    color: #fff;
+}
+
+
+/********* contents **********/
 .contents-group{
     display: block;
 }
+.contents-area{
+    padding: 8rem 0 0 0;
+    margin: 0 auto;
+}
 .contents-index{
     width: 100%;
-    margin-right: 0;
-    margin-bottom: 3rem;
+    margin: 0 0 3rem 0;
+}
+.contents-index:nth-child(3){
+    margin-bottom: 0;
 }
 .contents-index h3{
     font-size: 2.2rem;
@@ -194,46 +228,38 @@ img{
     width: 24rem;
     margin: 0 auto;
 }
-
-
-/* 2個目の矢印を非表示に */
 .down-button-bk{
-    display: none;
-}
-.sd-container{
-    height: auto;
+    display: none;/* contents下にある矢印を非表示に */
 }
 
-/* h1の変更 */
-.center-text h1{
-    font-size: 3rem;
-}
 
-/* intro-areaの変更 */
-.intro-txt span{
-    display: block;
-    margin-bottom: 3rem;
+/********* About, Works, Contact共通**********/
+#about,
+#works,
+#contact{
+    padding-top: 8rem;
 }
-
-/* ct-ttlの変更 */
 .ct-ttl{
     font-size: 2.4rem;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 }
 .ct-ttl::after{
-    height: .3rem;
     margin-top: 1.5rem;
 }
 
-/* aboutの変更 */
+
+/********* about **********/
 #about{
     width: 90%;
-    margin-bottom: 8rem;
+    margin-bottom: 0;
 }
-.profile,
-.comment{
+.profile{
     width: 100%;
     margin-bottom: 2rem;
+}
+.comment{
+    width: 100%;
+    margin-bottom: 0;
 }
 .pf-img{
     width: 20rem;
@@ -256,61 +282,65 @@ img{
     padding-left: 2.2rem;
 }
 
-/* works, contactの変更 */
-#works,
+
+/********* works **********/
+#works{
+    width: 90%;
+    margin-bottom: 0;
+}
+.works-item{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.works-item:last-child{
+    margin-bottom: 0;
+}
+
+
+/********* modal **********/
+.modal-content{
+    width: 90%;
+}
+
+
+/********* contact **********/
 #contact{
     width: 90%;
     margin-bottom: 8rem;
 }
 
-/* works-itemの変更 */
-.works-item{
-    width: 100%;
-    margin-bottom: 1rem;
-}
-.modal-content{
-    width: 90%;
-}
 
-/* submit buttonの調整 */
+/********* footer **********/
 .submit-btn button{
     background-color: #fff;
 }
 
-/* アニメーションのオフ */
+
+
+
+/************************************************
+****************** animation ********************
+************************************************/
+
+/********* アニメーションのオフ **********/
 .sideIn{
     animation: none;
 }
-
-.ct-ttl:first-child{
-    padding-top: 0rem;
+.sns-list ul li{
+    animation: none;
+}
+.contents-list ul li{
+    animation: none;
 }
 
-
-
-/****************** 追記 ********************/
-.btnOfSmall{
-    position: absolute;
-    display: block;
-    width: 3rem;
-    height: 3rem;
-    right: 47%;
-    transform: translate(-50%);
-    bottom: 2rem;
-    opacity: 0;
-}
-.sd-title{
-    animation-delay: 0s;
-}
-.contents-index:nth-child(1){
+/********* 遅延時間変更 **********/
+.contents-index:nth-child(1),
+.contents-index:nth-child(2),
+.contents-index:nth-child(3){
     animation-delay: .2s; 
 }
-.contents-index:nth-child(2){
-    animation-delay: .2s;
-}
-.contents-index:nth-child(3){
-    animation-delay: .2s;
-}
+.contents-index,
+.sd-title,
 .works-item:nth-child(2),
 .works-item:nth-child(3),
 .works-item:nth-child(4),
@@ -319,43 +349,13 @@ img{
     animation-delay: 0s;
 }
 
-#center{
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.intro-area{
-    padding: 0;
-}
-.intro-txt{
-    width: 80%;
-}
-.title span{
-    padding: 0 1rem;
-}
 
-.contents-area{
-    margin-bottom: 0;
-}
-.contents-index:nth-child(3){
-    margin-bottom: 0;
-}
-#about,
-#works,
-#contact{
-    padding-top: 8rem;
-}
-#about{
-    margin-bottom: 0;
-}
-.comment{
-    margin-bottom: 0;
-}
-.works-item{
-    margin-bottom: 0;
-}
-#works{
-    margin-bottom: 0;
-}
+
+
+
+
+
+
+
+
+
