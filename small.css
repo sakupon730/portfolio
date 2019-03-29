@@ -116,6 +116,9 @@ img{
 .sns-list{
     text-align: center;
 }
+.sns-list ul{
+    padding: 0 2rem;
+}
 .contents-list ul li{
     font-size: 1.6rem;
     margin: 0 0 4rem 0;

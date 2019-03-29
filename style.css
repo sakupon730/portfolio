@@ -83,10 +83,10 @@ a:hover{
 }
 .bar-position{
     position: fixed;
-    top: 0;
-    left: 0;
     width: 20%;
     height: 100%; 
+    top: 0;
+    left: 0;
     background-color: #292F33;
 }
 

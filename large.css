@@ -16,16 +16,17 @@ img{
 
 
 
+
 /************************************************
 ******************* responsive ******************
 ************************************************/
 
 /********* サイドバーのレイアウト変更 **********/
 .bar-position{
-    z-index: 3;
     box-shadow: 0 .2rem rgba(0,0,0,0.2);
     width: 100%;
     height: auto;
+    z-index: 3;
 }
 .main-container{
     width: 100%;
@@ -40,19 +41,19 @@ img{
 /********* メニューボタンの記述 **********/
 #menu-btn{
     position: fixed;
-    top: 1.6rem;
-    right: 2.2rem;
     width: 3rem;
     height: 1.6rem;
+    top: 1.6rem;
+    right: 2.2rem;
     cursor: pointer;
     z-index: 4;
 }
 #menu-btn span{
-    position: absolute;
     display: block;
-    top: 50%;
+    position: absolute;
     width: 100%;
     height: .15rem;
+    top: 50%;
     background: #fff;
     border-radius: .2rem;
     transition: all .6s;
@@ -61,11 +62,11 @@ img{
 #menu-btn span::after{
     content: "";
     display: block;
+    position: absolute;
     width: 100%;
     background: #fff;
     border-radius: .2rem;
     transition: all .6s;
-    position: absolute;
 }
 #menu-btn span::before{
     height: .15rem;
@@ -89,9 +90,9 @@ img{
 /********* ハンバーガーメニューの記述 **********/
 #hbg-menu{
     position: absolute;
-    top: 0;
     width: 100%;
     height: 100vh;
+    top: 0;
     background: rgba(0,0,0,0.8);
     z-index: 6;
     opacity: 0;
@@ -118,8 +119,7 @@ img{
 }
 .contents-list ul li{
     font-size: 2rem;
-    margin: 0;
-    margin-bottom: 4rem;
+    margin: 0 0 4rem 0;
     opacity: 1;
 }
 .sns-list ul{
@@ -137,13 +137,20 @@ img{
 }
 
 
-/********* Introduction **********/
-.intro-area{
-    padding-top: 10rem;
+/********* Introduction, Contents共通 **********/
+.sd-container{
+    height: auto;
 }
 .title{
     font-size: 2.6rem;
     margin-bottom: 5rem;
+}
+
+
+/********* Introduction **********/
+.intro-area{
+    padding: 10rem 0 6rem;
+    margin: 0;
 }
 .ft-title{
     margin-bottom: 3rem;
@@ -152,15 +159,18 @@ img{
 
 /********* contents **********/
 .contents-area{
-    margin-bottom: 0;
+    margin: 0;
+    padding-top: 6rem;
 }
 .contents-group{
     display: block;
 }
 .contents-index{
     width: 100%;
-    margin-right: 0;
     margin-bottom: 4rem;
+}
+.contents-index:nth-child(3){
+    margin-bottom: 0;
 }
 .contents-index h3{
     font-size: 2.4rem;
@@ -178,41 +188,45 @@ img{
 .down-button-bk{
     display: none;/* contents下にある矢印を非表示に */
 }
-.sd-container{
-    height: auto;
+
+
+/********* About, Works, Contact共通**********/
+#about,
+#works,
+#contact{
+    padding-top: 8rem;
 }
 
 
 /********* about **********/
 #about{
-    padding-top: 8rem;
+    margin: 0 auto; 
 }
-.profile,
+.profile{
+    width: 100%;
+    margin: 0 auto 3rem;
+}
 .comment{
     width: 100%;
-    margin-bottom: 4rem;
+    margin: 0;
 }
 .pf-img{
     width: 23rem;
     height: 23rem;
-}
-.ct-ttl:first-child{/* Aboutのh3の余白調整 */
-    padding-top: 0rem;
+    margin: 0 auto 3rem;
 }
 
 
 /********* works **********/
 #works{
     width: 80%;
-    padding-top: 8rem;
-    margin-bottom: 0;
+    margin: 0 auto;
 }
 
 /********* contact **********/
 #contact{
     width: 80%;
-    padding-top: 9.2rem;
-    margin-bottom: 10rem;
+    margin: 0 auto 10rem;
 }
 
 
