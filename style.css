@@ -419,6 +419,7 @@ a:hover{
     padding-top: 6rem;
 }
 .works-container{
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -483,7 +484,7 @@ a:hover{
 
 
 /********* モーダルウィンドウの記述 **********/
-.modal-area {
+.modal-area{
     position: fixed;
     top: 0;
     left: 0;
@@ -494,7 +495,6 @@ a:hover{
     visibility: hidden;
     transition: all .6s;
 }
-
 .modal-area.active{
     opacity: 1;
     visibility: visible;
@@ -519,6 +519,9 @@ a:hover{
 }
 .modal-content figure{
     margin-bottom: 2rem;
+}
+.modal-content figure img{
+    width: 100%;
 }
 .modal-content p{
     font-size: 1.4rem;
@@ -713,7 +716,7 @@ textarea{
 @keyframes sideIn{
     from{
         margin-left: 1rem;
-        opacity: 0;
+        opacity: 1;
     }to{
         opacity: 1;
     }

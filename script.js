@@ -104,7 +104,7 @@ $(function(){
 
 
 
-/********** moreのクリック処理 **********/
+/********** モーダルウィンドウの処理 **********/
 $(function(){
 
     //開くときの処理
@@ -112,7 +112,6 @@ $(function(){
         e.preventDefault();
         $('.modal-area').toggleClass('active');
     });
-
     //閉じるときの処理
     $('.modal-bg, .close').on('click', function(e){
         e.preventDefault();
@@ -120,8 +119,6 @@ $(function(){
     });
 
 });
-
-
 
 
 
