@@ -1,51 +1,51 @@
 /******************** reset css *******************/
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
-  html{
+html{
     font-size: 62.5%;
-  }
+}
 
-  html,body,h1,h2,h3,h4,ul,ol,dl,li,dt,dd,p,div,span,img,a,table,tr,th,td {
+html,body,h1,h2,h3,h4,ul,ol,dl,li,dt,dd,p,div,span,img,a,table,tr,th,td{
     border: 0;
     font-weight: normal;
     margin: 0;
     padding: 0;
-  }
+}
   
-  article,
-  header,
-  footer,
-  aside,
-  figure,
-  figcaption,
-  nav,
-  section {
+article,
+header,
+footer,
+aside,
+figure,
+figcaption,
+nav,
+section{
     display: block;
-  }
+}
   
-  body {
+body{
     line-height: 1;
-  }
+}
   
-  ol,
-  ul {
+ol,
+ul{
     list-style: none;
     list-style-type: none;
-  }
+}
   
-  main {
+main{
     display:block; /* for IE11 */
-  }
+}
 
 
 
 
 /******************** 共通部分 *******************/
-body {
+body{
     background-color: #fff;
     font-family: "MS ゴシック"
 }
