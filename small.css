@@ -304,6 +304,12 @@ img{
 .modal-content{
     width: 90%;
 }
+.modal-content h2{
+    font-size: 2rem;
+}
+.view-code{
+    font-size: 1.4rem;
+}
 
 
 /********* contact **********/
