@@ -484,7 +484,12 @@ a:hover{
 
 
 /********* モーダルウィンドウの記述 **********/
-.modal-area{
+#modal-area-1,
+#modal-area-2,
+#modal-area-3,
+#modal-area-4,
+#modal-area-5,
+#modal-area-6{
     position: fixed;
     top: 0;
     left: 0;
@@ -495,7 +500,12 @@ a:hover{
     visibility: hidden;
     transition: all .6s;
 }
-.modal-area.active{
+#modal-area-1.active,
+#modal-area-2.active,
+#modal-area-3.active,
+#modal-area-4.active,
+#modal-area-5.active,
+#modal-area-6.active{
     opacity: 1;
     visibility: visible;
 }

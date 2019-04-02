@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="./style.css" type="text/css"><!-- cssファイルの宣言 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!-- jQueryの宣言 -->
     <script type="text/javascript" src="./script.js"></script><!-- jsファイルの読み込み -->
-    <!--<script src="./scrollify/jquery.scrollify.js"></script>--><!-- scrollifyの読み込み -->
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"><!-- google fontの読み込み -->
     <link href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css" rel="stylesheet"><!-- iconmonstrの読み込み -->
     <link rel="stylesheet" href="small.css" media="screen and (max-width:480px)">
@@ -169,7 +168,6 @@
                 <h3 class="ct-ttl">Works</h3>
 
                 <section class="works-container">
-
                     <div class="works-item">
                         <figure><img src="./img/works-01.jpg" alt=""></figure>
                         <h4 class="item-ttl">ここにタイトルが入ります</h4>
@@ -177,7 +175,7 @@
                             テキストテキストテキストテキストテキストテキストテキストテキストテキスト...
                         </p>
                         <div class="more">
-                            <a href="" class="click-more">more</a>
+                            <a data-target="modal-area-1" class="click-more">more</a>
                         </div>
                     </div>
             
@@ -188,7 +186,7 @@
                             テキストテキストテキストテキストテキストテキストテキストテキストテキスト...
                         </p>
                         <div class="more">
-                            <a href="" class="click-more">more</a>
+                            <a data-target="modal-area-2" class="click-more">more</a>
                         </div>
                     </div>
                 
@@ -199,7 +197,7 @@
                             テキストテキストテキストテキストテキストテキストテキストテキストテキスト...
                         </p>
                         <div class="more">
-                            <a href="" class="click-more">more</a>
+                            <a data-target="modal-area-3" class="click-more">more</a>
                         </div>
                     </div>
                 
@@ -210,7 +208,7 @@
                             テキストテキストテキストテキストテキストテキストテキストテキストテキスト...
                         </p>
                         <div class="more">
-                            <a href="" class="click-more">more</a>
+                            <a data-target="modal-area-4" class="click-more">more</a>
                         </div>
                     </div>
                     
@@ -221,7 +219,7 @@
                             テキストテキストテキストテキストテキストテキストテキストテキストテキスト...
                         </p>
                         <div class="more">
-                            <a href="" class="click-more">more</a>
+                            <a data-target="modal-area-5" class="click-more">more</a>
                         </div>
                     </div>
                                 
@@ -232,14 +230,14 @@
                             テキストテキストテキストテキストテキストテキストテキストテキストテキスト...
                         </p>
                         <div class="more">
-                            <a href="" class="click-more">more</a>
+                            <a data-target="modal-area-6" class="click-more">more</a>
                         </div>
                     </div>
 
                     <!-- モーダルウィンドウ-1 -->
-                    <section class="modal-area">
-                        <div class="modal-bg"></div>
-                            <div class="modal-content" id="close-fixed">
+                    <div id="modal-area-1" class="modal-close">
+                        <div class="modal-bg"></div><!-- モーダルのオーバーレイ -->
+                            <div class="modal-content" id="close-fixed"><!-- モーダル中身 -->
                                 <h2>ここにタイトルが入ります</h2>
                                 <figure><img src="./img/works-01.jpg" alt=""></figure>
                                 <p>
@@ -253,7 +251,108 @@
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    </div>
+                    <!-- ここまで -->
+
+                    <!-- モーダルウィンドウ-2 -->
+                    <div id="modal-area-2" class="modal-close">
+                        <div class="modal-bg"></div>
+                            <div class="modal-content" id="close-fixed">
+                                <h2>ここにタイトルが入ります</h2>
+                                <figure><img src="./img/works-02.jpg" alt=""></figure>
+                                <p>
+                                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                </p>
+                                <div class="code">
+                                    <a href="" class="view-code">view code</a>
+                                </div>
+                                <div class="close">
+                                    <button></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ここまで -->
+
+                    <!-- モーダルウィンドウ-3 -->
+                    <div id="modal-area-3" class="modal-close">
+                        <div class="modal-bg"></div>
+                            <div class="modal-content" id="close-fixed">
+                                <h2>ここにタイトルが入ります</h2>
+                                <figure><img src="./img/works-03.jpg" alt=""></figure>
+                                <p>
+                                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                </p>
+                                <div class="code">
+                                    <a href="" class="view-code">view code</a>
+                                </div>
+                                <div class="close">
+                                    <button></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ここまで -->
+
+                    <!-- モーダルウィンドウ-4 -->
+                    <div id="modal-area-4" class="modal-close">
+                        <div class="modal-bg"></div>
+                            <div class="modal-content" id="close-fixed">
+                                <h2>ここにタイトルが入ります</h2>
+                                <figure><img src="./img/works-04.jpg" alt=""></figure>
+                                <p>
+                                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                </p>
+                                <div class="code">
+                                    <a href="" class="view-code">view code</a>
+                                </div>
+                                <div class="close">
+                                    <button></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ここまで -->
+
+                    <!-- モーダルウィンドウ-5 -->
+                    <div id="modal-area-5" class="modal-close">
+                        <div class="modal-bg"></div>
+                            <div class="modal-content" id="close-fixed">
+                                    <div class="modal-content" id="close-fixed">
+                                <h2>ここにタイトルが入ります</h2>
+                                <figure><img src="./img/works-05.jpg" alt=""></figure>
+                                <p>
+                                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                </p>
+                                <div class="code">
+                                    <a href="" class="view-code">view code</a>
+                                </div>
+                                <div class="close">
+                                    <button></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ここまで -->
+
+                    <!-- モーダルウィンドウ-6 -->
+                    <div id="modal-area-6" class="modal-close">
+                        <div class="modal-bg"></div>
+                            <div class="modal-content" id="close-fixed">
+                                <h2>ここにタイトルが入ります</h2>
+                                <figure><img src="./img/works-06.jpg" alt=""></figure>
+                                <p>
+                                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                </p>
+                                <div class="code">
+                                    <a href="" class="view-code">view code</a>
+                                </div>
+                                <div class="close">
+                                    <button></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <!-- ここまで -->
                 </section>
             </section>

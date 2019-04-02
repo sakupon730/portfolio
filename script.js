@@ -110,15 +110,20 @@ $(function(){
     //開くときの処理
     $('.click-more').on('click', function(e){
         e.preventDefault();
-        $('.modal-area').toggleClass('active');
+
+        var modal = '#' + $(this).attr('data-target');
+        $(modal).toggleClass('active');
     });
+    
     //閉じるときの処理
     $('.modal-bg, .close').on('click', function(e){
         e.preventDefault();
-        $('.modal-area').removeClass('active');
+
+        $('.modal-close').removeClass('active');
     });
 
 });
+
 
 
 
