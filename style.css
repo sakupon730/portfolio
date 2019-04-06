@@ -135,7 +135,8 @@ a:hover{
 ************************************************/
 
 /********* main-containerの領域設定 **********/
-.main-container{
+.main-container,
+footer{
     width: 80%;
     float: right;
 }

@@ -13,15 +13,15 @@ $(function(){
 
 
 /********** ハンバーガーメニューの記述 **********/
-$(function(){
-    $('#menu-btn').on('click',function(){
-      $(this).toggleClass('active');
-      $('#hbg-menu').toggleClass('active');
+$(function () {
+    $('#menu-btn').on('click', function () {
+        $(this).toggleClass('active');
+        $('#hbg-menu').toggleClass('active');
 
-      //ページ内リンクがクリックされた時にハンバーガーメニューを消す処理
-      $('#ab-link, #wo-link, #co-link, #top-link').on('click', function(){
-        $('#menu-btn, #hbg-menu').removeClass('active');
-      });
+        //ページ内リンクがクリックされた時にハンバーガーメニューを消す処理
+        $('#ab-link, #wo-link, #co-link, #top-link').on('click', function () {
+            $('#menu-btn, #hbg-menu').removeClass('active');
+        });
     });
 });
 
