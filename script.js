@@ -12,82 +12,6 @@ $(function(){
 
 
 
-
-// /********** スムーススクロールの記述 **********/
-// $(function(){
-//     var current;
-//     var w = $(window).width();
-
-//     if(w >= 601 && 960 >= w){//横幅601~960pxの時のスムーススクロール
-//         $.scrollify({
-//             section: '.large',
-//             setHeights:false,
-//             easing:'swing',
-//             scrollSpeed:1000,
-//             before:function(i,large){
-//             current = i;
-//             },
-//         });
-//         $(window).on('resize',function(){
-//             if(current){
-//                 var currentScrl = $('.large').eq(current).offset().top;
-//                 $(window).scrollTop(currentScrl);
-//             }
-//         });    
-//     }else if(w >= 481 && 600 >= w){//横幅481~600pxの時のスムーススクロール
-//         $.scrollify({
-//             section: '.midi',
-//             setHeights:false,
-//             easing:'swing',
-//             scrollSpeed:1000,
-//             before:function(i,midi){
-//             current = i;
-//             },
-//         });
-//         $(window).on('resize',function(){
-//             if(current){
-//                 var currentScrl = $('.midi').eq(current).offset().top;
-//                 $(window).scrollTop(currentScrl);
-//             }
-//         });    
-//     }else if(w <= 480){//横幅480px以下時のスムーススクロール
-//         $.scrollify({
-//             section: '.small',
-//             setHeights:false,
-//             easing:'swing',
-//             scrollSpeed:1000,
-//             before:function(i,small){
-//             current = i;
-//             },
-//         });
-//         $(window).on('resize',function(){
-//             if(current){
-//                 var currentScrl = $('.small').eq(current).offset().top;
-//                 $(window).scrollTop(currentScrl);
-//             }
-//         });    
-//     }else{//通常サイズ時のスムーススクロール
-//         $.scrollify({
-//             section: '.nomal',
-//             setHeights:false,
-//             easing:'swing',
-//             scrollSpeed:1000,
-//             before:function(i,nomal){
-//             current = i;
-//             },
-//         });
-//         $(window).on('resize',function(){
-//             if(current){
-//                 var currentScrl = $('.nomal').eq(current).offset().top;
-//                 $(window).scrollTop(currentScrl);
-//             }
-//         });    
-//     }
-// });    
-
-
-
-
 /********** ハンバーガーメニューの記述 **********/
 $(function(){
     $('#menu-btn').on('click',function(){
@@ -136,35 +60,40 @@ $(window).scroll(function(){
 
     if(windowWidth >= 960){
         //横幅960px以上のアニメーション
-        $('.contents-index, .title, .intro-txt, .ct-ttl, .pf-img, .profile, .comment, .works-item, .contact, .down-button-bk').each(function(){
+        $('.contents-index, .title, .intro-txt, .down-button-bk').each(function(){
             var targetPosition = $(this).offset().top;
-            if(topWindow > targetPosition - windowHeight + 40){
+            if(topWindow > targetPosition - windowHeight + 50){
+                $(this).addClass('scrollFadeInUp');
+            }
+        });
+        $('.ct-ttl, .pf-img, .profile, .comment, .works-item, .contact').each(function(){
+            var targetPosition = $(this).offset().top;
+            if(topWindow > targetPosition - windowHeight + 150){
                 $(this).addClass('scrollFadeInUp');
             }
         });
     }else if(windowWidth >= 601 && 960 >= windowWidth){
         //横幅601~960pxの時のアニメーションの処理
-        $('.contents-index, .title, .intro-txt, .ct-ttl, .pf-img, .profile, .comment, .works-item, .contact, .title, .intro-txt').each(function(){
+        $('.contents-index, .title, .intro-txt, .down-button-bk, .ct-ttl, .pf-img, .profile, .comment, .works-item, .contact').each(function(){
             var targetPosition = $(this).offset().top;
-            if(topWindow > targetPosition - windowHeight + 120){
+            if(topWindow > targetPosition - windowHeight + 150){
                 $(this).addClass('scrollFadeInUp');
             }
         });
     }else{
-        //横幅480px以下, 横幅481~600pxのアニメーション
-        $('.contents-index, .title, .intro-txt, .ct-ttl, .pf-img, .profile, .comment, .works-item, .contact').each(function(){
-            var targetPosition = $(this).offset().top;
-            if(topWindow > targetPosition - windowHeight + 120){
-                $(this).addClass('scrollFadeInUp');
-            }
-        });
-
         //introductionのアニメーションの処理
         $('.title, .intro-txt').each(function(){
             var targetPosition = $(this).offset().top;
-            if(topWindow > targetPosition - windowHeight + 40){
+            if(topWindow > targetPosition - windowHeight + 50){
                 $(this).addClass('scrollFadeInUp');
                 $('.btnOfSmall').addClass('fadeInUp');
+            }
+        });
+        //横幅480px以下, 横幅481~600pxのアニメーション
+        $('.contents-index, .ct-ttl, .pf-img, .profile, .comment, .works-item, .contact').each(function(){
+            var targetPosition = $(this).offset().top;
+            if(topWindow > targetPosition - windowHeight + 150){
+                $(this).addClass('scrollFadeInUp');
             }
         });
     }

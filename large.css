@@ -40,6 +40,7 @@ img{
 
 /********* メニューボタンの記述 **********/
 #menu-btn{
+    display: block;
     position: fixed;
     width: 3rem;
     height: 1.6rem;
