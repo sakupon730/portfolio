@@ -430,10 +430,14 @@ footer{
 }
 .works-item{
     width: 30rem;
-    box-shadow: .1rem .1rem .1rem .1rem #ececec;
-    margin-bottom: 2rem;
-    padding: 1.2rem;
     flex-direction: row;
+    box-shadow: .1rem .1rem .1rem .1rem #ececec;
+    padding: 1.2rem;
+    margin-bottom: 2rem;
+    transition: all .3s;
+}
+.works-item:hover{
+    box-shadow: .3rem .3rem .3rem .3rem #ececec;
 }
 .works-item figure{
     width: 100%;
