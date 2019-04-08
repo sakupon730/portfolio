@@ -855,7 +855,8 @@ textarea{
 .comment,
 .works-item,
 .contact,
-.down-button-bk{
+.down-button-bk,
+.form-amt{
     opacity: 0;
 }
 .scrollFadeInUp{

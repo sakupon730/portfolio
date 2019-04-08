@@ -66,7 +66,7 @@ $(window).scroll(function(){
                 $(this).addClass('scrollFadeInUp');
             }
         });
-        $('.ct-ttl, .pf-img, .profile, .comment, .works-item, .contact').each(function(){
+        $('.ct-ttl, .pf-img, .profile, .comment, .works-item, .contact, .form-amt').each(function(){
             var targetPosition = $(this).offset().top;
             if(topWindow > targetPosition - windowHeight + 150){
                 $(this).addClass('scrollFadeInUp');
@@ -74,7 +74,7 @@ $(window).scroll(function(){
         });
     }else if(windowWidth >= 601 && 960 >= windowWidth){
         //横幅601~960pxの時のアニメーションの処理
-        $('.contents-index, .title, .intro-txt, .down-button-bk, .ct-ttl, .pf-img, .profile, .comment, .works-item, .contact').each(function(){
+        $('.contents-index, .title, .intro-txt, .down-button-bk, .ct-ttl, .pf-img, .profile, .comment, .works-item, .contact, .form-amt').each(function(){
             var targetPosition = $(this).offset().top;
             if(topWindow > targetPosition - windowHeight + 150){
                 $(this).addClass('scrollFadeInUp');
@@ -90,7 +90,7 @@ $(window).scroll(function(){
             }
         });
         //横幅480px以下, 横幅481~600pxのアニメーション
-        $('.contents-index, .ct-ttl, .pf-img, .profile, .comment, .works-item, .contact').each(function(){
+        $('.contents-index, .ct-ttl, .pf-img, .profile, .comment, .works-item, .contact, .form-amt').each(function(){
             var targetPosition = $(this).offset().top;
             if(topWindow > targetPosition - windowHeight + 150){
                 $(this).addClass('scrollFadeInUp');
