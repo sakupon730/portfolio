@@ -444,6 +444,7 @@ footer{
 }
 .item-ttl{
     font-size: 1.6rem;
+    text-shadow: .1rem .2rem .3rem #cecece;
     margin-bottom: 1.2rem;
 }
 .item-ttl span i{
@@ -534,6 +535,7 @@ footer{
 }
 .modal-content h2{
     font-size: 2.2rem;
+    text-shadow: .1rem .2rem .3rem #cecece;
     margin-bottom: 1.4rem;
 }
 .modal-content h2 span i{
@@ -546,9 +548,17 @@ footer{
 .modal-content figure img{
     width: 100%;
 }
+.modal-des-ttl{
+    font-size: 2rem;
+    text-shadow: .1rem .2rem .3rem #cecece;
+    border-left: .2rem solid #51a8fa;
+    padding-left: .8rem;
+    margin-bottom: 1.2rem;
+}
 .modal-content p{
     font-size: 1.4rem;
     line-height: 1.4;
+    padding: 0 .8rem;
     margin-bottom: 1.4rem;
 }
 .close button{
