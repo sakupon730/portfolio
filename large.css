@@ -21,14 +21,15 @@ img{
 ******************* responsive ******************
 ************************************************/
 
-/********* サイドバーのレイアウト変更 **********/
+/********* サイドバー,メイン,フッターのレイアウト変更 **********/
 .bar-position{
     box-shadow: 0 .2rem rgba(0,0,0,0.2);
     width: 100%;
     height: auto;
     z-index: 3;
 }
-.main-container{
+.main-container,
+footer{
     width: 100%;
 }
 .bar-position h2{
@@ -233,6 +234,7 @@ img{
 
 
 /********* footer **********/
+
 .submit-btn button{
     background-color: #fff;
 }

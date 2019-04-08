@@ -134,7 +134,7 @@ a:hover{
 ********************* main **********************
 ************************************************/
 
-/********* main-containerの領域設定 **********/
+/********* main-containerとfooterの領域設定 **********/
 .main-container,
 footer{
     width: 80%;
@@ -446,6 +446,11 @@ footer{
     font-size: 1.6rem;
     margin-bottom: 1.2rem;
 }
+.item-ttl span i{
+    color: #292F33;
+    font-size: 1.6rem;
+    margin-right: .8rem;
+}
 .works-item p{
     font-size: 1.4rem;
     line-height: 1.2;
@@ -530,6 +535,10 @@ footer{
 .modal-content h2{
     font-size: 2.2rem;
     margin-bottom: 1.4rem;
+}
+.modal-content h2 span i{
+    font-size: 2.2rem;
+    margin-right: 1rem;
 }
 .modal-content figure{
     margin-bottom: 1.4rem;
