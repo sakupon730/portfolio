@@ -309,6 +309,9 @@ footer{
 .modal-content h2{
     font-size: 2rem;
 }
+.modal-des-ttl{
+    font-size: 1.8rem;
+}
 .view-code{
     font-size: 1.4rem;
 }

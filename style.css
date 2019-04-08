@@ -660,7 +660,7 @@ form div{
 }
 form div label{
     display: inline-block;
-    padding: .4rem .8rem;
+    padding: .4rem 0;
     margin-bottom: .8rem;
 }
 .label-req,
@@ -669,7 +669,7 @@ form div label{
     color: #fff;
     border-radius: .2rem;
     padding: .4rem .8rem;
-    margin-right: 2rem;
+    margin-right: .5rem;
     margin-top: .4rem;
 }
 .label-req{
