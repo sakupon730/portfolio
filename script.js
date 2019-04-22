@@ -99,7 +99,7 @@ $(window).scroll(function(){
 
         $('.contact, .form-amt').each(function(){
             var targetPosition = $(this).offset().top;
-            if(topWindow > targetPosition - windowHeight + 50){
+            if(topWindow > targetPosition - windowHeight + 100){
                 $(this).addClass('scrollFadeInUp');
             }
         });
