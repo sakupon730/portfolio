@@ -704,11 +704,13 @@ textarea{
     font-size: 1.4rem;
     border: .1rem #292F33 solid;
     resize: none;
+    padding: .3rem .4rem;
     outline: 0;
 }
 
 /********* 送信ボタンの記述 **********/
 .submit-btn{
+    margin-top: 3rem;
     text-align: center;
 }
 .submit-btn button{
