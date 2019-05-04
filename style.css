@@ -332,13 +332,13 @@ footer{
     background-size: cover;
     background-position: center;
     border-radius: 50%;
-    box-shadow: .2rem .2rem.2rem .2rem#ececec;
+    box-shadow: .2rem .2rem.2rem .2rem #ececec;
     margin: 0 auto 4rem auto;
 }
 .profile,
 .comment{
     width: 70%;
-    box-shadow: .1rem .1rem .1rem .1rem#ececec;
+    box-shadow: .1rem .1rem .1rem .1rem #ececec;
     margin: 0 auto 4rem;
     padding: 1.5rem 2rem 1.5rem;
 }
@@ -709,7 +709,7 @@ textarea{
 }
 
 /********* 送信ボタンの記述 **********/
-.submit-btn{
+/* .submit-btn{
     margin-top: 3rem;
     text-align: center;
 }
@@ -741,6 +741,118 @@ textarea{
 }
 .submit-btn button:hover::before{
     left: 0;
+} */
+
+
+/********* 確認、送信、戻るボタンの記述 **********/
+.submit-btn{
+    width: 12rem;
+    height: 3.4rem;
+    margin: 3rem auto 0 auto;
+}
+input[name="btn_confirm"],
+input[name="btn_submit"],
+input[name="btn_back"]{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    border: none;
+    padding: 0;
+    background: rgba(14,47,51,100%);
+    transition: all .5s;
+}
+input[name="btn_confirm"]:hover,
+input[name="btn_submit"]:hover,
+input[name="btn_back"]:hover{
+    background: rgba(14,47,51,80%);
+}
+
+
+/********* 送信、戻るボタンの横並び記述 **********/
+.btn-flex{
+    display: flex;
+}
+.sideBySide{
+    flex-direction: row;
+}
+.sideBySide:nth-child(1){
+    margin-right: 5rem;
+}
+.sideBySide:nth-child(2){
+    margin-left: 0;
+}
+
+
+
+/********* 必須項目が空白だった場合の記述 **********/
+.error_list{
+    margin-bottom: 1.6rem;
+}
+.error_list li{
+    font-size: 1.2rem;
+    color: #DE4355;
+    line-height: 1.5;
+}
+
+
+/********* 確認画面の記述 **********/
+.confir{
+    border-bottom: .1rem #292F33 solid;
+    margin-bottom: 1.4rem;
+}
+.confir:nth-child(1){
+    border-top: .1rem #292F33 solid;
+    padding-top: 1.4rem;
+}
+.confir:nth-child(4){
+    margin-bottom: 0;
+    padding-bottom: 1.4rem;
+}
+.con-block{
+    width: 20rem;
+    float: left;
+    clear: left;
+}
+.confir p{
+    float: left;
+    width: calc(100% - 20rem);
+    word-wrap: break-word;
+    padding: .4rem 0;
+    line-height: 1.3;
+}
+
+
+/********* 送信完了画面の記述 **********/
+.box{
+    width: 80%;
+    margin: 0 auto 2.4rem auto;
+}
+.box h4{
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: #DE4355;
+}
+.box p{
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+.backSite{
+    width: 12rem;
+    height: 3.4rem;
+    margin: 3rem auto 0 auto;
+}
+.backSite a{
+    font-size: 1.4rem;
+    color: #fff;
+    background: rgba(14,47,51,100%);
+    padding: 1rem 1.6rem;
+    margin: 0 auto;
+    transition: all .5s;
+}
+.backSite a:hover{
+    background: rgba(14,47,51,80%);
 }
 
 
