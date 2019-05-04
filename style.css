@@ -709,7 +709,7 @@ textarea{
 }
 
 /********* 送信ボタンの記述 **********/
-/* .submit-btn{
+.submit-btn{
     margin-top: 3rem;
     text-align: center;
 }
@@ -741,7 +741,7 @@ textarea{
 }
 .submit-btn button:hover::before{
     left: 0;
-} */
+}
 
 
 /********* 確認、送信、戻るボタンの記述 **********/
