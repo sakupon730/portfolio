@@ -743,9 +743,12 @@ textarea{
     left: 0;
 }
 
+/************************************************
+********************* form **********************
+************************************************/
 
 /********* 確認、送信、戻るボタンの記述 **********/
-.submit-btn{
+/* .submit-btn{
     width: 12rem;
     height: 3.4rem;
     margin: 3rem auto 0 auto;
@@ -765,11 +768,11 @@ input[name="btn_confirm"]:hover,
 input[name="btn_submit"]:hover,
 input[name="btn_back"]:hover{
     background: rgba(14,47,51,80%);
-}
+} */
 
 
 /********* 送信、戻るボタンの横並び記述 **********/
-.btn-flex{
+/* .btn-flex{
     display: flex;
 }
 .sideBySide{
@@ -780,23 +783,23 @@ input[name="btn_back"]:hover{
 }
 .sideBySide:nth-child(2){
     margin-left: 0;
-}
+} */
 
 
 
 /********* 必須項目が空白だった場合の記述 **********/
-.error_list{
+/* .error_list{
     margin-bottom: 1.6rem;
 }
 .error_list li{
     font-size: 1.2rem;
     color: #DE4355;
     line-height: 1.5;
-}
+} */
 
 
 /********* 確認画面の記述 **********/
-.confir{
+/* .confir{
     border-bottom: .1rem #292F33 solid;
     margin-bottom: 1.4rem;
 }
@@ -819,11 +822,11 @@ input[name="btn_back"]:hover{
     word-wrap: break-word;
     padding: .4rem 0;
     line-height: 1.3;
-}
+} */
 
 
 /********* 送信完了画面の記述 **********/
-.box{
+/* .box{
     width: 80%;
     margin: 0 auto 2.4rem auto;
 }
@@ -853,7 +856,7 @@ input[name="btn_back"]:hover{
 }
 .backSite a:hover{
     background: rgba(14,47,51,80%);
-}
+} */
 
 
 
