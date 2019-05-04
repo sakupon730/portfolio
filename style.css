@@ -878,7 +878,7 @@ input[name="btn_back"]:hover{
 ****************** animation ********************
 ************************************************/
 
-/********* sakupon.netのアニメーション **********/
+/********* sakupon.infoのアニメーション **********/
 .sideIn{
     animation-name: sideIn;
     animation-duration: 1s;
@@ -945,7 +945,7 @@ input[name="btn_back"]:hover{
 }
 
 
-/********* welcom to sakupon.net, 矢印, sns-listのアニメーション **********/
+/********* welcom to sakupon.info, 矢印, sns-listのアニメーション **********/
 .fadeInUp,
 .fadeInUp-delay{
     opacity: 0;
