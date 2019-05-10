@@ -1,8 +1,10 @@
+<?php include('contactBase.php'); ?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>Sakupon.info</title>
+    <title>sakupon.info</title>
     <link rel="stylesheet" href="./style.css" type="text/css"><!-- cssファイルの宣言 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!-- jQueryの宣言 -->
     <script type="text/javascript" src="./script.js"></script><!-- jsファイルの読み込み -->
@@ -23,7 +25,7 @@
 
         <!-- メニューリストの記述 -->
         <div class="bar-position">
-            <h2 class="sideIn"><a href="./index.html">Sakupon.info</a></h2>
+            <h2 class="sideIn"><a href="./index.php">sakupon.info</a></h2>
 
             <div id="hbg-menu">
                 <div id="menu-bg"></div>
@@ -48,7 +50,7 @@
         </div>
     </header>
 
-
+	
     <!-- メインコンテンツの記述 -->
     <main class="main-container" id="top">
         <!-- main-imgの記述 -->
@@ -58,7 +60,7 @@
                 <div class="center-text">
                     <h1 class="fadeInUp">
                         <span>Welcome<br>to<br></span>
-                        <span>Sakupon.info</span>
+                        <span>sakupon.info</span>
                     </h1>
                 </div>
                 <div class="down-button-wt fadeInUp-delay">
@@ -374,42 +376,14 @@
                 </section>
             </section>
 
-
             <!-- Contactの記述 -->
             <section id="contact">
                 <h3 class="ct-ttl">Contact</h3>
-
                 <section class="contact">
-                    <form action="confirmation.php" method="post">
-                        <div class="form-amt">
-                            <span class="label-req">必須</span>
-                            <label for="name">お名前</label>
-                            <input type="text" id="name" name="user-name" placeholder="例）山田太郎">
-                        </div>
-                
-                        <div class="form-amt">
-                            <span class="label-req">必須</span>
-                            <label for="mail">メールアドレス</label>
-                            <input type="email" id="mail" name="user-mail" placeholder="例) example@example.com">
-                        </div>
-                
-                        <div class="form-amt">
-                            <span class="label-any">任意</span>
-                            <label for="ttl">件名</label>
-                            <input type="title" id="ttl" name="user-ttl" placeholder="例）このサイトについて">
-                        </div>
-                
-                        <div class="form-amt">
-                            <span class="label-req">必須</span>
-                            <label for="msg">お問い合わせ内容</label>
-                            <textarea name="msg" id="user-massage" name="inquiry" placeholder="お問い合わせ内容を入力してください。"></textarea>
-                        </div>
 
-                        <div class="submit-btn form-amt">
-                            <button type="submit" name="send">送信</button>
-                        </div>
-                    </form>
-                    
+					<?php include('contactPage.php'); ?>
+					<!-- contactConfir.phpを呼び出している -->
+					
                 </section>
             </section>
         </section>
@@ -417,7 +391,7 @@
 
     <footer>
         <div class="home">
-            <a href="">Sakupon.info</a>
+            <a href="">sakupon.info</a>
         </div>
     </footer>
 

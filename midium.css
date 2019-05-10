@@ -290,6 +290,24 @@ footer{
 }
 
 
+/********* contact **********/
+#contact{
+    width: 70%;
+}
+
+/********* 確認画面の記述 **********/
+.con-block{
+    width: 100%;
+    float: none;
+    clear: none;
+}
+.confir p{
+    float: none;
+    width: 100%;
+    margin-top: 1.2rem;
+}
+
+
 /********* footer **********/
 .submit-btn button{
     background-color: #fff;

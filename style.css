@@ -656,6 +656,8 @@ footer{
 ********************* contact *******************
 ************************************************/
 
+
+/********* 入力画面の記述 **********/
 #contact{
     width: 63%;
     margin: 0 auto 8rem auto;
@@ -666,10 +668,10 @@ form{
     margin: 0 auto 4rem 0;
     font-size: 1.4rem;
 }
-form div{
+.element_wrap{
     margin-bottom: 1.4rem;
 }
-form div label{
+.element_wrap label{
     display: inline-block;
     padding: .4rem 0;
     margin-bottom: .8rem;
@@ -681,7 +683,6 @@ form div label{
     border-radius: .2rem;
     padding: .4rem .8rem;
     margin-right: .5rem;
-    margin-top: .4rem;
 }
 .label-req{
     background-color: #DE4355;
@@ -689,16 +690,16 @@ form div label{
 .label-any{
     background-color: #51a8fa;
 }
-form div input{
-    width: 100%;
+.element_wrap input{
+    width:  100%;
     height: 2.4rem;
-    display: inline-block;
+    display: block;
     font-size: 1.4rem;
     border: .1rem #292F33 solid;
     padding: .3rem .4rem;
     outline: 0;
 }
-textarea{
+.element_wrap textarea{
     width: 100%;
     height: 20rem;
     font-size: 1.4rem;
@@ -708,47 +709,9 @@ textarea{
     outline: 0;
 }
 
-/********* 送信ボタンの記述 **********/
-.submit-btn{
-    margin-top: 3rem;
-    text-align: center;
-}
-.submit-btn button{
-    position: relative;
-    display: inline-block;
-    font-size: 1.4rem;
-    border: .1rem #292F33 solid;
-    color: #292F33;
-    padding: .4rem 1.8rem;
-    z-index: 1;
-    overflow: hidden;
-    transition: all .5s;
-    outline: 0;
-}
-.submit-btn button::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: #292F33;
-    z-index: -1;
-    transition: all .5s;
-}
-.submit-btn button:hover{
-    color: #fff;
-}
-.submit-btn button:hover::before{
-    left: 0;
-}
-
-/************************************************
-********************* form **********************
-************************************************/
 
 /********* 確認、送信、戻るボタンの記述 **********/
-/* .submit-btn{
+.submit-btn{
     width: 12rem;
     height: 3.4rem;
     margin: 3rem auto 0 auto;
@@ -759,6 +722,7 @@ input[name="btn_back"]{
     width: 100%;
     height: 100%;
     color: #fff;
+    font-size: 1.4rem;
     border: none;
     padding: 0;
     background: rgba(14,47,51,100%);
@@ -768,11 +732,11 @@ input[name="btn_confirm"]:hover,
 input[name="btn_submit"]:hover,
 input[name="btn_back"]:hover{
     background: rgba(14,47,51,80%);
-} */
+}
 
 
 /********* 送信、戻るボタンの横並び記述 **********/
-/* .btn-flex{
+.btn-flex{
     display: flex;
 }
 .sideBySide{
@@ -783,50 +747,45 @@ input[name="btn_back"]:hover{
 }
 .sideBySide:nth-child(2){
     margin-left: 0;
-} */
+}
 
 
 
 /********* 必須項目が空白だった場合の記述 **********/
-/* .error_list{
+.error_list{
     margin-bottom: 1.6rem;
 }
 .error_list li{
     font-size: 1.2rem;
     color: #DE4355;
     line-height: 1.5;
-} */
+}
 
 
 /********* 確認画面の記述 **********/
-/* .confir{
+.confir{
     border-bottom: .1rem #292F33 solid;
-    margin-bottom: 1.4rem;
+    padding: 1.4rem .2rem;
 }
 .confir:nth-child(1){
     border-top: .1rem #292F33 solid;
-    padding-top: 1.4rem;
-}
-.confir:nth-child(4){
-    margin-bottom: 0;
-    padding-bottom: 1.4rem;
 }
 .con-block{
     width: 20rem;
     float: left;
     clear: left;
+    margin-top: .2rem;
 }
 .confir p{
     float: left;
     width: calc(100% - 20rem);
     word-wrap: break-word;
-    padding: .4rem 0;
     line-height: 1.3;
-} */
+}
 
 
 /********* 送信完了画面の記述 **********/
-/* .box{
+.box{
     width: 80%;
     margin: 0 auto 2.4rem auto;
 }
@@ -856,7 +815,7 @@ input[name="btn_back"]:hover{
 }
 .backSite a:hover{
     background: rgba(14,47,51,80%);
-} */
+}
 
 
 
@@ -881,7 +840,7 @@ input[name="btn_back"]:hover{
 ****************** animation ********************
 ************************************************/
 
-/********* sakupon.infoのアニメーション **********/
+/********* sakupon.netのアニメーション **********/
 .sideIn{
     animation-name: sideIn;
     animation-duration: 1s;
@@ -948,7 +907,7 @@ input[name="btn_back"]:hover{
 }
 
 
-/********* welcom to sakupon.info, 矢印, sns-listのアニメーション **********/
+/********* welcom to sakupon.net, 矢印, sns-listのアニメーション **********/
 .fadeInUp,
 .fadeInUp-delay{
     opacity: 0;

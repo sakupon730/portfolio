@@ -319,8 +319,20 @@ footer{
 
 /********* contact **********/
 #contact{
-    width: 90%;
+    width: 80%;
     margin-bottom: 8rem;
+}
+
+/********* 確認画面の記述 **********/
+.con-block{
+    float: none;
+    clear: none;
+    width: 100%;
+}
+.confir p{
+    float: none;
+    width: 100%;
+    margin-top: 1.2rem;
 }
 
 
