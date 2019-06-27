@@ -1,0 +1,133 @@
+@import "setting";
+@import "reset";
+
+/************************************************
+****************** animation ********************
+************************************************/
+
+/********* sakupon.netのアニメーション **********/
+.sideIn{
+    animation-name: sideIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes sideIn{
+    from{
+        margin-left: 1rem;
+        opacity: 1;
+    }to{
+        opacity: 1;
+    }
+}
+
+
+/********* contents-listのアニメーション **********/
+.contents-list{
+    ul{
+        li{
+            animation-name: sideInFast;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            opacity: 0;
+            &:nth-child(1){
+                animation-delay: .4s;
+            }
+            &:nth-child(2){
+                animation-delay: .5s;
+            }
+            &:nth-child(3){
+                animation-delay: .6s;
+            }
+            &:nth-child(4){
+                animation-delay: .7s;
+            }
+        }
+    }
+}
+@keyframes sideInFast{
+    from{
+        margin-left: .1rem;
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+
+/********* .sns-listのアニメーション **********/
+.sns-list{
+    ul{
+        li{
+            animation-name: fadeIn;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            opacity: 0;
+            &:nth-child(1){
+                animation-delay: .9s;
+            }
+            &:nth-child(2){
+                animation-delay: 1.1s;
+            }
+        }
+    }
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+
+/********* welcom to sakupon.net, 矢印, sns-listのアニメーション **********/
+.fadeInUp,
+.fadeInUp-delay{
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.fadeInUp-delay{
+    animation-delay: 1.2s;
+}
+@keyframes fadeInUp{
+    from{
+        opacity: 0;
+        margin-bottom: -5rem;
+    }to{
+        opacity: 1;
+    }
+}
+
+
+/********* スクロールアニメーション **********/
+.title,
+.intro-txt,
+.contents-index,
+.ct-ttl,
+.pf-img,
+.profile,
+.comment,
+.works-item,
+.contact,
+.down-button-bk,
+.form-amt{
+    opacity: 0;
+}
+.scrollFadeInUp{
+    opacity: 0;
+    animation-name: scrollFadeInUp;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    visibility: visible;
+}
+@keyframes scrollFadeInUp{
+    from{
+        opacity: 0;
+        transform: translateY(5rem);
+    }to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -5,14 +5,14 @@
 <head>
     <meta charset="UTF-8">
     <title>sakupon.info</title>
-    <link rel="stylesheet" href="./style.css" type="text/css"><!-- cssファイルの宣言 -->
+    <link rel="stylesheet" href="./gulp-sample/css/import.css" type="text/css"><!-- cssファイルの宣言 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!-- jQueryの宣言 -->
     <script type="text/javascript" src="./script.js"></script><!-- jsファイルの読み込み -->
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"><!-- google fontの読み込み -->
     <link href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css" rel="stylesheet"><!-- iconmonstrの読み込み -->
-    <link rel="stylesheet" href="small.css" media="screen and (max-width:480px)">
-    <link rel="stylesheet" href="midium.css" media="screen and (min-width: 481px) and (max-width:600px)">
-    <link rel="stylesheet" href="large.css" media="screen and (min-width:601px) and (max-width: 960px)">
+    <link rel="stylesheet" href="./gulp-sample/css/small.css" media="screen and (max-width:480px)">
+    <link rel="stylesheet" href="./gulp-sample/css/midium.css" media="screen and (min-width: 481px) and (max-width:600px)">
+    <link rel="stylesheet" href="./gulp-sample/css/large.css" media="screen and (min-width:601px) and (max-width: 960px)">
     <meta name="viewport" content="width=device-width, initial-scale=1"><!-- メディアクエリの宣言 -->
 </head>
 <body class="clearfix">
