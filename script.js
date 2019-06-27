@@ -13,13 +13,13 @@ $(function(){
 
 
 /********** ハンバーガーメニューの記述 **********/
-$(function () {
-    $('#menu-btn').on('click', function () {
+$(function(){
+    $('#menu-btn').on('click', function(){
         $(this).toggleClass('active');
         $('#hbg-menu').toggleClass('active');
 
         //ページ内リンクがクリックされた時にハンバーガーメニューを消す処理
-        $('#ab-link, #wo-link, #co-link, #top-link').on('click', function () {
+        $('#ab-link, #wo-link, #co-link, #top-link').on('click', function(){
             $('#menu-btn, #hbg-menu').removeClass('active');
         });
     });
@@ -45,7 +45,6 @@ $(function(){
 
         $('.modal-close').removeClass('active');
     });
-
 });
 
 
@@ -84,7 +83,7 @@ $(window).scroll(function(){
         //introductionのアニメーションの処理
         $('.title, .intro-txt').each(function(){
             var targetPosition = $(this).offset().top;
-            if(topWindow > targetPosition - windowHeight + 50){
+            if(topWindow > targetPosition - windowHeight + 200){
                 $(this).addClass('scrollFadeInUp');
                 $('.btnOfSmall').addClass('fadeInUp');
             }
@@ -92,7 +91,7 @@ $(window).scroll(function(){
         //横幅480px以下, 横幅481~600pxのアニメーション
         $('.contents-index, .ct-ttl, .pf-img, .profile, .comment, .works-item').each(function(){
             var targetPosition = $(this).offset().top;
-            if(topWindow > targetPosition - windowHeight + 150){
+            if(topWindow > targetPosition - windowHeight + 200){
                 $(this).addClass('scrollFadeInUp');
             }
         });

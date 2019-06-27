@@ -5,14 +5,14 @@
 <head>
     <meta charset="UTF-8">
     <title>sakupon.info</title>
-    <link rel="stylesheet" href="./gulp-sample/css/import.css" type="text/css"><!-- cssファイルの宣言 -->
+    <link rel="stylesheet" href="./gulp-file/css/style.css" type="text/css"><!-- cssファイルの宣言 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!-- jQueryの宣言 -->
     <script type="text/javascript" src="./script.js"></script><!-- jsファイルの読み込み -->
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"><!-- google fontの読み込み -->
     <link href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css" rel="stylesheet"><!-- iconmonstrの読み込み -->
-    <link rel="stylesheet" href="./gulp-sample/css/small.css" media="screen and (max-width:480px)">
-    <link rel="stylesheet" href="./gulp-sample/css/midium.css" media="screen and (min-width: 481px) and (max-width:600px)">
-    <link rel="stylesheet" href="./gulp-sample/css/large.css" media="screen and (min-width:601px) and (max-width: 960px)">
+    <link rel="stylesheet" href="./gulp-file/css/small.css" media="screen and (max-width:480px)">
+    <link rel="stylesheet" href="./gulp-file/css/midium.css" media="screen and (min-width: 481px) and (max-width:600px)">
+    <link rel="stylesheet" href="./gulp-file/css/large.css" media="screen and (min-width: 601px) and (max-width: 960px)">
     <meta name="viewport" content="width=device-width, initial-scale=1"><!-- メディアクエリの宣言 -->
 </head>
 <body class="clearfix">
@@ -146,9 +146,9 @@
                                 <dt class="pf-list"><span><i class="im im-tag"></i></span>好きな食べ物</dt>
                                 <dd class="pf-list-ctt">ラーメン, お寿司, お肉</dd>
                                 <dt class="pf-list"><span><i class="im im-tag"></i></span>スキル</dt>
-                                <dd class="pf-list-ctt">HTML5, CSS3, JavaScript, jQuery, WordPress, C, Java</dd>
+                                <dd class="pf-list-ctt">HTML5, CSS3, Sass, JavaScript, jQuery, WordPress, C, Java</dd>
                                 <dt class="pf-list"><span><i class="im im-tag"></i></span>できること</dt>
-                                <dd class="pf-list-ctt">静的・動的webサイト制作, WordPressを用いたwebサイト制作</dd>
+                                <dd class="pf-list-ctt">静的・動的webサイト制作, WordPressを用いたwebサイト制作, Webデザイン（趣味）</dd>
                             </dl>
                         </li>
                     </ul>
@@ -161,10 +161,10 @@
                         初めまして。当サイト運営者のさくぽんと申します。現在は都内の大学に通っています。
                     </p>
                     <p>
-                        高校時代に受講した情報の授業でwebサイト制作に興味を持ち、大学入学後にマークアップを独学で学び始めました。普段は既存のサイトをトレースしたり、トレースしたコードに対してアドバイスを頂いたりして技術を向上させています。
+                        大学入学後にマークアップの勉強をし始め、当初は既存のサイトをトレースしたり、トレースしたサイトにアドバイスを頂いたりして技術を向上させていました。最近はデザインの勉強をし始め、趣味でWebデザインをぼちぼちやってます。
                     </p>
                     <p>
-                        将来はフロントエンドエンジニアとして、静的なサイトからWebGLやCanvasを用いたクリエイティブなwebサイト制作まで幅広く行いたいです。また、アート作品を見ることも好きなのでwebサイト制作だけでなくプログラミングを用いたアート作品の生成も行いたいです。
+                        将来はフロントエンドエンジニアとして、静的なサイトからWebGLやCanvasを用いたクリエイティブなwebサイト制作・Webアプリケーション開発を行いたいです。他にも、デジタルアートを見ることが好きなのでプログラミングを用いたアート作品の生成も行いたいです。
                     </p>
                 </section>
             </section>
@@ -394,6 +394,5 @@
             <a href="">sakupon.info</a>
         </div>
     </footer>
-
 </body>
 </html>
