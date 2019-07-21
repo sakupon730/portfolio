@@ -148,7 +148,7 @@
                                 <dt class="pf-list"><span><i class="im im-tag"></i></span>スキル</dt>
                                 <dd class="pf-list-ctt">HTML5, CSS3, Sass, JavaScript, jQuery, WordPress, C, Java</dd>
                                 <dt class="pf-list"><span><i class="im im-tag"></i></span>できること</dt>
-                                <dd class="pf-list-ctt">静的・動的webサイト制作, WordPressを用いたwebサイト制作, Webデザイン（趣味）</dd>
+                                <dd class="pf-list-ctt">webサイト制作, WordPressを用いたwebサイト制作, Webデザイン</dd>
                             </dl>
                         </li>
                     </ul>
@@ -193,7 +193,7 @@
                         <figure><img src="./img/works-02.png" alt=""></figure>
                         <h4 class="item-ttl"><span><i class="im im-pencil"></i></span>個人サイトのWebデザイン</h4>
                         <p>
-                            個人サイトのWebデザインを行いました。
+                            ポートフォリオサイトのWebデザインを行いました。
                         </p>
                         <div class="more">
                             <a data-target="modal-area-2" class="click-more">more</a>
@@ -275,11 +275,11 @@
                         <div class="modal-bg"></div>
                         <div class="modal-content" id="close-fixed">
                             <h2><span><i class="im im-pencil"></i></span>個人サイトのWebデザイン</h2>
-                            <figure><img src="./img/works-01.png" alt=""></figure>
+                            <figure><img src="./img/works-02.png" alt=""></figure>
                             <div class="modal-des">
                                 <h3 class="modal-des-ttl">Description</h3>
                                 <p>
-                                    以前更新した<a href="https://github.com/sakupon730/portfolio">ポートフォリオサイト</a>のWebデザインを、「Figma」というSketchと似た機能を持つツールを用いて行いました。完成したサイトとは少々デザインが異なりますが、温かい目で御覧ください。
+                                    以前更新したポートフォリオサイトのWebデザインを、「Figma」というSketchと似た機能を持つツールを用いて行いました。完成したサイトとは少々デザインが異なりますが、温かい目で御覧ください。
                                 </p>
                             </div>
                             <div class="code">
