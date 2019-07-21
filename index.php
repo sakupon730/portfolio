@@ -158,13 +158,13 @@
                 <section class="comment">
                     <h4 class="ab-subttl">Comment</h4>
                     <p>
-                        初めまして。当サイト運営者のさくぽんと申します。現在は都内の大学に通っています。
+                        初めまして。当サイト運営者のさくぽんと申します。独学ではWeb技術、大学では機械学習を主に学んでいます。
                     </p>
                     <p>
-                        大学入学後にマークアップの勉強をし始め、当初は既存のサイトをトレースしたり、トレースしたサイトにアドバイスを頂いたりして技術を向上させていました。最近はデザインの勉強をし始め、趣味でWebデザインをぼちぼちやってます。
+                        大学入学後にマークアップの勉強をし始め、当初は既存のサイトをトレースしたり、トレースしたサイトにアドバイスを頂いたりして技術を向上させています。最近は趣味でWebデザインをぼちぼちやっています。
                     </p>
                     <p>
-                        将来はフロントエンドエンジニアとして、静的なサイトからWebGLやCanvasを用いたクリエイティブなwebサイト制作・Webアプリケーション開発を行いたいです。他にも、デジタルアートを見ることが好きなのでプログラミングを用いたアート作品の生成も行いたいです。
+                        Webサイト制作・Webアプリケーション開発・W機械学習を取り入れたWebアプリケーションの開発などに興味があります。
                     </p>
                 </section>
             </section>
@@ -173,8 +173,10 @@
             <!-- Worksの記述 -->
             <section id="works">
                 <h3 class="ct-ttl">Works</h3>
-
+                
                 <section class="works-container">
+
+                    <!-- works-item-01 -->
                     <div class="works-item">
                         <figure><img src="./img/works-01.png" alt=""></figure>
                         <h4 class="item-ttl"><span><i class="im im-pencil"></i></span>初めての個人サイト</h4>
@@ -185,29 +187,32 @@
                             <a data-target="modal-area-1" class="click-more">more</a>
                         </div>
                     </div>
-            
+
+                    <!-- works-item-02 -->
                     <div class="works-item">
-                        <figure><img src="./img/NoImage.png" alt=""></figure>
-                        <h4 class="item-ttl"><span><i class="im im-pencil"></i></span>Comming Soon...</h4>
+                        <figure><img src="./img/works-02.png" alt=""></figure>
+                        <h4 class="item-ttl"><span><i class="im im-pencil"></i></span>個人サイトのWebデザイン</h4>
                         <p>
-                            心を込めて全力で製作中です。もうしばらくお待ち下さい。
+                            個人サイトのWebデザインを行いました。
                         </p>
                         <div class="more">
                             <a data-target="modal-area-2" class="click-more">more</a>
                         </div>
                     </div>
-                
+
+                    <!-- works-item-03 -->
                     <div class="works-item">
-                        <figure><img src="./img/NoImage.png" alt=""></figure>
-                        <h4 class="item-ttl"><span><i class="im im-pencil"></i></span>Comming Soon...</h4>
+                        <figure><img src="./img/works-03.png" alt=""></figure>
+                        <h4 class="item-ttl"><span><i class="im im-pencil"></i>サークルサイトのWebデザイン</span></h4>
                         <p>
-                            心を込めて全力で製作中です。もうしばらくお待ち下さい。
+                            非公式サークルのWebサイトのデザインを行いました。
                         </p>
                         <div class="more">
                             <a data-target="modal-area-3" class="click-more">more</a>
                         </div>
                     </div>
-                
+
+                    <!-- works-item-04 -->
                     <div class="works-item">
                         <figure><img src="./img/NoImage.png" alt=""></figure>
                         <h4 class="item-ttl"><span><i class="im im-pencil"></i></span>Comming Soon...</h4>
@@ -218,7 +223,8 @@
                             <a data-target="modal-area-4" class="click-more">more</a>
                         </div>
                     </div>
-                    
+
+                    <!-- works-item-05 -->
                     <div class="works-item">
                         <figure><img src="./img/NoImage.png" alt=""></figure>
                         <h4 class="item-ttl"><span><i class="im im-pencil"></i></span>Comming Soon...</h4>
@@ -229,7 +235,8 @@
                             <a data-target="modal-area-5" class="click-more">more</a>
                         </div>
                     </div>
-                                
+
+                    <!-- works-item-06 -->
                     <div class="works-item">
                         <figure><img src="./img/NoImage.png" alt=""></figure>
                         <h4 class="item-ttl"><span><i class="im im-pencil"></i></span>Comming Soon...</h4>
@@ -267,16 +274,16 @@
                     <div id="modal-area-2" class="modal-close">
                         <div class="modal-bg"></div>
                         <div class="modal-content" id="close-fixed">
-                            <h2><span><i class="im im-pencil"></i></span>Comming Soon...</h2>
-                            <figure><img src="./img/NoImage.png" alt=""></figure>
+                            <h2><span><i class="im im-pencil"></i></span>個人サイトのWebデザイン</h2>
+                            <figure><img src="./img/works-01.png" alt=""></figure>
                             <div class="modal-des">
                                 <h3 class="modal-des-ttl">Description</h3>
                                 <p>
-                                    moreボタンを押してしまったんですね...。「こいつ、ポートフォリオサイト作ったのに見せるもんないんかい！」と思った方、申し訳ありません。その通りでございます。製作完了次第、たぶんひっそりと更新致しますのでもうしばらくお待ち下さい。
+                                    以前更新した<a href="https://github.com/sakupon730/portfolio">ポートフォリオサイト</a>のWebデザインを、「Figma」というSketchと似た機能を持つツールを用いて行いました。完成したサイトとは少々デザインが異なりますが、温かい目で御覧ください。
                                 </p>
                             </div>
                             <div class="code">
-                                <a href="" class="view-code">view code</a>
+                                <a href="https://www.figma.com/file/LMk7RXDUN7akQLRd5vLU2ogB/portfolio?node-id=0%3A1" class="view-code">view link</a>
                             </div>
                             <div class="close">
                                 <button></button>
@@ -289,16 +296,16 @@
                     <div id="modal-area-3" class="modal-close">
                         <div class="modal-bg"></div>
                         <div class="modal-content" id="close-fixed">
-                            <h2><span><i class="im im-pencil"></i></span>Comming Soon...</h2>
-                            <figure><img src="./img/NoImage.png" alt=""></figure>
+                            <h2><span><i class="im im-pencil"></i></span>サークルサイトのWebデザイン</h2>
+                            <figure><img src="./img/works-03.png" alt=""></figure>
                             <div class="modal-des">
                                 <h3 class="modal-des-ttl">Description</h3>
                                 <p>
-                                    moreボタンを押してしまったんですね...。「こいつ、ポートフォリオサイト作ったのに見せるもんないんかい！」と思った方、申し訳ありません。その通りでございます。製作完了次第、たぶんひっそりと更新致しますのでもうしばらくお待ち下さい。
+                                    2019年6月に設立された、東京工科大学八王子キャンパスの非公式サークル「Forge」のWebサイトのデザインをFigmaで行いました。ページ数が多かったためなかなか一人で手がけることが大変でしたが、デザインはとても好きなので気づいたら終わってました(笑)
                                 </p>
                             </div>
                             <div class="code">
-                                <a href="" class="view-code">view code</a>
+                                <a href="https://www.figma.com/file/HZvS51DoIhxpWEtvrAuLH1cJ/Forge-site?node-id=0%3A1" class="view-code">view link</a>
                             </div>
                             <div class="close">
                                 <button></button>
