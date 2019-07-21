@@ -502,7 +502,7 @@ footer {
 }
 
 .pf-list-ctt {
-  width: calc($max-width - 13rem);
+  width: calc(100% - 14rem);
   float: left;
   line-height: 1.3;
   font-size: 1.4rem;
@@ -562,11 +562,13 @@ footer {
 
 .works-item figure {
   width: 100%;
+  height: 20rem;
   margin-bottom: 1.4rem;
 }
 
 .works-item figure img {
   width: 100%;
+  height: 100%;
 }
 
 .works-item .item-ttl {
